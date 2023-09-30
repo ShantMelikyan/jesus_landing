@@ -2,6 +2,7 @@ import Image from "next/image";
 import Newsletter from "./components/Newsletter";
 import landing from "../public/landing2.png"
 
+
 export default function Home() {
   return (
     <main className="h-full w-full">
