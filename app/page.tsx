@@ -36,7 +36,7 @@ export default function Home() {
         </h2> */}
       </div>
       <section className="text-center w-full bg-gradient-to-b from-[#53577a] via-[#907d93] to-[#e6b8ae]">
-        <div className="md:flex  items-center justify-center p-32 mx-auto max-w-6xl border-b border-[#907d93]">
+        <div className="md:flex  items-center justify-center py-20 mx-auto max-w-6xl border-b border-[#907d93]">
           <h2 className="leading-relaxed tracking-widest mx-auto text-3xl md:text-left text-center font-semibold w-48 pb-10 md:pb-0 text-[#2c3047]">
             Discover a Community Driven by Faith and Purpose
           </h2>
@@ -58,12 +58,12 @@ export default function Home() {
             faith-based.
           </p>
         </div>
-        <div className="md:flex items-center justify-center gap-12 p-8">
-          <div className="shadow-lg shadow-[#907d9378] rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-20 mb-10 md:mb-0">
-            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-medium text-[#1c1e31aa]">
+        <div className="lg:flex items-center justify-center gap-12 p-8">
+          <div className="shadow-lg shadow-[#907d9378] rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-16 mb-10 lg:mb-0">
+            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-medium text-[#1c1e31aa] mx-auto max-w-sm">
               MyFaithBuddy
             </h3>
-            <p className="py-10 text-lg w-52 p-6 mx-auto text-[#1c1e31aa]">
+            <p className="py-10 text-lg w-52 p-6 mx-auto text-[#212336]">
               Browse, read, and explore the Bible like never before.
             </p>
             <a
@@ -73,11 +73,11 @@ export default function Home() {
               Learn More
             </a>
           </div>
-          <div className="shadow-lg shadow-[#907d9378] py-20 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-20 mb-10 md:mb-0">
-            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-medium text-[#1c1e31aa]">
+          <div className="shadow-lg shadow-[#907d9378] py-20 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-16 mb-10 lg:mb-0">
+            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-medium text-[#1c1e31aa] mx-auto max-w-sm">
               Store
             </h3>
-            <p className="py-10 text-lg w-52 p-6 mx-auto text-[#1c1e31aa]">
+            <p className="py-10 text-lg w-52 p-6 mx-auto text-[#212336]">
               Christian-themed items that inspire and uplift.
             </p>
             <a
@@ -87,11 +87,11 @@ export default function Home() {
               Visit Store
             </a>
           </div>
-          <div className="shadow-lg shadow-[#907d9378] rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-20 mb-10 md:mb-0">
-            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-medium text-[#1c1e31aa]">
+          <div className="shadow-lg shadow-[#907d9378] rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-16 mb-10 lg:mb-0">
+            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-medium text-[#1c1e31aa] mx-auto max-w-sm">
               Blog
             </h3>
-            <p className="py-10 text-lg w-52 p-6 mx-auto text-[#1c1e31aa]">
+            <p className="py-10 text-lg w-52 p-6 mx-auto text-[#212336]">
               Stay updated with the latest articles and insights.
             </p>
             <a
