@@ -58,7 +58,7 @@ export default function Home() {
           </p>
         </div>
         <div className="md:flex items-center justify-center gap-12 p-8">
-          <div className="shadow-lg rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-20 mb-10 md:mb-0">
+          <div className="shadow-lg shadow-[#907d9378] rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-20 mb-10 md:mb-0">
             <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-medium text-[#1c1e31aa]">
               MyFaithBuddy
             </h3>
@@ -72,7 +72,7 @@ export default function Home() {
               Learn More
             </a>
           </div>
-          <div className="shadow-lg py-20 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-20 mb-10 md:mb-0">
+          <div className="shadow-lg shadow-[#907d9378] py-20 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-20 mb-10 md:mb-0">
             <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-medium text-[#1c1e31aa]">
               Store
             </h3>
@@ -86,7 +86,7 @@ export default function Home() {
               Visit Store
             </a>
           </div>
-          <div className="shadow-lg rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-20 mb-10 md:mb-0">
+          <div className="shadow-lg shadow-[#907d9378] rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-20 mb-10 md:mb-0">
             <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-medium text-[#1c1e31aa]">
               Blog
             </h3>
