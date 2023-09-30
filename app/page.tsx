@@ -36,20 +36,20 @@ export default function Home() {
       </div>
       <section className="text-center w-full bg-gradient-to-b from-[#53577a] via-[#907d93] to-[#e6b8ae]">
         <div className="md:flex  items-center justify-center p-32 mx-auto max-w-6xl border-b border-[#907d93]">
-          <h2 className="leading-relaxed tracking-widest mx-auto text-3xl md:text-left text-center font-semibold w-48 pb-10 md:pb-0">
+          <h2 className="leading-relaxed tracking-widest mx-auto text-3xl md:text-left text-center font-semibold w-48 pb-10 md:pb-0 text-[#2c3047]">
             Discover a Community Driven by Faith and Purpose
           </h2>
-          <p className="mx-auto w-60 text-lg leading-loose">
+          <p className="mx-auto w-60 text-lg leading-8 text-[#212336]">
             Welcome to Jesus Group, where faith meets action and purpose.
             We&apos;re a community committed to enriching lives through the
             power of spirituality and meaningful engagement.
           </p>
         </div>
         <div className="p-32 mx-auto max-w-2xl">
-          <h2 className="tracking-widest text-3xl py-4 font-medium">
+          <h2 className="tracking-widest text-3xl py-4 font-medium text-[#2c3047]">
             Our Mission
           </h2>
-          <p className=" text-lg">
+          <p className="text-lg text-[#212336]">
             Our mission is to create a positive impact by blending faith,
             technology, and community. Through our diverse projects—from
             AI-powered Biblical exploration to a marketplace of Christian-themed
@@ -58,7 +58,7 @@ export default function Home() {
           </p>
         </div>
         <div className="md:flex items-center justify-center gap-12 p-8">
-          <div className="shadow-lg rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-20">
+          <div className="shadow-lg rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-20 mb-10 md:mb-0">
             <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-medium text-[#1c1e31aa]">
               MyFaithBuddy
             </h3>
@@ -72,7 +72,7 @@ export default function Home() {
               Learn More
             </a>
           </div>
-          <div className="shadow-lg py-20 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-20">
+          <div className="shadow-lg py-20 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-20 mb-10 md:mb-0">
             <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-medium text-[#1c1e31aa]">
               Store
             </h3>
@@ -86,7 +86,7 @@ export default function Home() {
               Visit Store
             </a>
           </div>
-          <div className="shadow-lg rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-20">
+          <div className="shadow-lg rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-20 mb-10 md:mb-0">
             <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-medium text-[#1c1e31aa]">
               Blog
             </h3>
