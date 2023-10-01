@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Newsletter from "./components/Newsletter";
 import landing from "../public/landing2.png"
+import MultiLayerParallax from "./components/MultiLayerParallax";
 
 
 export default function Home() {
   return (
     <main className="h-full w-full">
       <div className="h-screen flex flex-col items-center justify-center relative">
-        <Image
+        <MultiLayerParallax />
+        {/* <Image
           src={landing}
           priority={true}
           alt="landing"
@@ -28,12 +30,12 @@ export default function Home() {
           }}
           className="absolute mt-20 px-10 max-w-2xl"
         ></iframe>
-        {/* <h1 className="text-3xl py-5 absolute  text-white">
+        <h1 className="text-3xl py-5 absolute  text-white">
           Welcome to Jesus Group
         </h1>
         <h2 className="text-xl pt-20 absolute text-white">
           Your Journey to Faith and Inspiration
-        </h2> */}
+        </h2>  */}
       </div>
       <section className="text-center w-full bg-gradient-to-b from-[#53577a] via-[#907d93] to-[#e6b8ae]">
         <div className="md:flex  items-center justify-center py-20 mx-auto max-w-6xl border-b border-[#907d93]">
@@ -46,15 +48,15 @@ export default function Home() {
             power of spirituality and meaningful engagement.
           </p>
         </div>
-        <div className="p-32 mx-auto max-w-2xl">
+        <div className="p-20 mx-auto max-w-2xl">
           <h2 className="tracking-widest text-3xl py-4 font-medium text-[#2c3047]">
             Our Mission
           </h2>
           <p className="text-lg text-[#212336]">
             Our mission is to create a positive impact by blending faith,
-            technology, and community. Through our diverse projects—from
+            technology, and community. Through our diverse projects — from
             AI-powered Biblical exploration to a marketplace of Christian-themed
-            products—we strive to be your go-to platform for all things
+            products — we strive to be your go-to platform for all things
             faith-based.
           </p>
         </div>
