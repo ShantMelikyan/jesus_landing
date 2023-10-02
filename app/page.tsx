@@ -37,7 +37,7 @@ export default function Home() {
           Your Journey to Faith and Inspiration
         </h2>  */}
       </div>
-      <section className="text-center w-full bg-gradient-to-b from-[#53577a] via-[#907d93] to-[#e6b8ae]">
+      <section className="text-center w-full bg-gradient-to-b from-[#53577a] via-[#907d93] to-[#e6b8ae] pt-32">
         <div className="md:flex  items-center justify-center py-20 mx-auto max-w-6xl border-b border-[#907d93]">
           <h2 className="leading-relaxed tracking-widest mx-auto text-3xl md:text-left text-center font-semibold w-48 pb-10 md:pb-0 text-[#2c3047]">
             Discover a Community Driven by Faith and Purpose
