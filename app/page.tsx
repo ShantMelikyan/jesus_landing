@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Newsletter from "./components/Newsletter";
-import landing from "../public/landing2.png"
+import landing from "../public/landing2.png";
 import MultiLayerParallax from "./components/MultiLayerParallax";
-
 
 export default function Home() {
   return (
@@ -39,7 +38,7 @@ export default function Home() {
       </div>
       <section className="text-center w-full bg-gradient-to-b from-[#53577a] via-[#907d93] to-[#e6b8ae] pt-32">
         <div className="md:flex  items-center justify-center py-20 mx-auto max-w-6xl border-b border-[#907d93]">
-          <h2 className="leading-relaxed tracking-widest mx-auto text-3xl md:text-left text-center font-semibold w-48 pb-10 md:pb-0 text-[#2c3047]">
+          <h2 className="leading-10 tracking-widest mx-auto text-3xl md:text-left text-center font-semibold w-48 pb-10 md:pb-0 text-[#2c3047]">
             Discover a Community Driven by Faith and Purpose
           </h2>
           <p className="mx-auto w-60 text-lg leading-8 text-[#212336]">
@@ -105,7 +104,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Newsletter />
     </main>
   );
 }

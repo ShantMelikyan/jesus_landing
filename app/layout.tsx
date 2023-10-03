@@ -1,10 +1,10 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Rajdhani } from 'next/font/google'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const rajdhani = Rajdhani({ subsets: ['latin'], weight: "500"  })
 
 export const metadata: Metadata = {
   title: 'Jesus Group',
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={rajdhani.className}>
         <Navbar />
         {children}
         <Footer />

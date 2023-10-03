@@ -14,8 +14,6 @@ export default function MultiLayerParallax() {
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   const backgroundY2 = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
   const backgroundY3 = useTransform(scrollYProgress, [0, 1], ["0%", "-60%"]);
-
-
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
 
   return (
@@ -24,7 +22,10 @@ export default function MultiLayerParallax() {
         ref={ref}
         className="w-full h-full overflow-hidden relative grid place-items-center"
       >
-        <motion.div style={{ y: textY }} className="relative z-30">
+        <motion.div
+          style={{ y: textY }}
+          className="relative z-50 w-full grid place-items-center"
+        >
           <iframe
             src="https://embeds.beehiiv.com/32c167b5-f949-4fb7-9f73-363fb45d6438?slim=true"
             data-test-id="beehiiv-embed"
@@ -37,7 +38,7 @@ export default function MultiLayerParallax() {
               borderRadius: 0,
               backgroundColor: "transparent",
             }}
-            className=" mt-20 px-10 max-w-2xl"
+            className="w-full mt-20 px-10 max-w-xl"
           ></iframe>
         </motion.div>
 
