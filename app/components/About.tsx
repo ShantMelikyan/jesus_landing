@@ -18,7 +18,7 @@ const About = () => {
             Just a few things to know <strong>about us</strong>
           </h1>
           <h2 className="text-lg md:py-0 py-6">
-            Discover who we are, our mission, and how we're making a difference.
+            Discover who we are, our mission, and how we&apos;re making a difference.
           </h2>
           <h2 className="md:max-w-lg max-w-sm">
             We are a dedicated group of individuals committed to fostering a
