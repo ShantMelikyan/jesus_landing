@@ -48,7 +48,7 @@ export default function Home() {
           </p>
         </div>
         <div className="p-20 mx-auto max-w-2xl">
-          <h2 className="tracking-widest text-3xl py-4 font-medium text-[#2c3047]">
+          <h2 className="tracking-widest text-3xl py-4 font-semibold text-[#2c3047]">
             Our Mission
           </h2>
           <p className="text-lg text-[#212336]">
@@ -61,10 +61,10 @@ export default function Home() {
         </div>
         <div className="lg:flex items-center justify-center gap-12 p-8">
           <div className="shadow-lg shadow-[#907d9378] rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-16 mb-10 lg:mb-0">
-            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-medium text-[#1c1e31aa] mx-auto max-w-sm">
+            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-semibold text-[#37394b] mx-auto max-w-sm">
               MyFaithBuddy
             </h3>
-            <p className="py-10 text-lg w-52 p-6 mx-auto text-[#212336]">
+            <p className="py-10 text-lg w-52 p-6 mx-auto text-[#37394b]">
               Browse, read, and explore the Bible like never before.
             </p>
             <a
@@ -75,10 +75,10 @@ export default function Home() {
             </a>
           </div>
           <div className="shadow-lg shadow-[#907d9378] py-20 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-16 mb-10 lg:mb-0">
-            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-medium text-[#1c1e31aa] mx-auto max-w-sm">
+            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-semibold text-[#37394b] mx-auto max-w-sm">
               Store
             </h3>
-            <p className="py-10 text-lg w-52 p-6 mx-auto text-[#212336]">
+            <p className="py-10 text-lg w-52 p-6 mx-auto text-[#37394b]">
               Christian-themed items that inspire and uplift.
             </p>
             <a
@@ -89,10 +89,10 @@ export default function Home() {
             </a>
           </div>
           <div className="shadow-lg shadow-[#907d9378] rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-16 mb-10 lg:mb-0">
-            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-medium text-[#1c1e31aa] mx-auto max-w-sm">
+            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-semibold text-[#37394b] mx-auto max-w-sm">
               Blog
             </h3>
-            <p className="py-10 text-lg w-52 p-6 mx-auto text-[#212336]">
+            <p className="py-10 text-lg w-52 p-6 mx-auto text-[#37394b]">
               Stay updated with the latest articles and insights.
             </p>
             <a

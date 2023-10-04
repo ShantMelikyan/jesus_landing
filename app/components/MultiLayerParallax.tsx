@@ -13,7 +13,7 @@ export default function MultiLayerParallax() {
   });
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   const backgroundY2 = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
-  const backgroundY3 = useTransform(scrollYProgress, [0, 1], ["0%", "-60%"]);
+  const backgroundY3 = useTransform(scrollYProgress, [0, 1], ["-30%", "-80%"]);
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
 
   return (
@@ -86,9 +86,9 @@ export default function MultiLayerParallax() {
       ></Image> */}
       </div>
       <motion.div
-        className="h-[340px] w-full z-50 absolute"
+        className="h-[740px] w-full z-50 absolute"
         style={{
-          backgroundImage: `url(/exclude5.png)`,
+          backgroundImage: `url(/flipped.png)`,
           backgroundPosition: "bottom",
           backgroundSize: "cover",
           y: backgroundY3,

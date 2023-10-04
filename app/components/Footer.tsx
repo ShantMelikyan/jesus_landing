@@ -12,10 +12,10 @@ import Newsletter from "./Newsletter";
 const Footer = () => {
   return (
     <div className="bg-gradient-to-t from-[#53577a] to-[#e6b8ae] p-8 ">
-      <div className=" border-white/25  backdrop-blur-md border rounded-lg bg-white/20 p-14">
-        <div className="md:flex justify-center text-[#3a405c] pb-3">
+      <div className=" border-white/25  backdrop-blur-md border rounded-2xl bg-white/20 pb-3 ">
+        <div className="lg:flex sm:grid sm:grid-cols-2 lg:justify-center lg:gap-16 text-[#3a405c] md:p-14 p-8">
           <div className="p-5">
-            <h2 className="tracking-wider pb-4 text-lg">Jesus Group</h2>
+            <h2 className="tracking-wider pb-4 text-lg font-semibold">Jesus Group</h2>
             <ul>
               <li>Home</li>
               <li>About</li>
@@ -24,7 +24,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="p-5">
-            <h2 className="tracking-wider pb-4 text-lg">My Faith Buddy</h2>
+            <h2 className="tracking-wider pb-4 text-lg font-semibold">My Faith Buddy</h2>
             <ul>
               <li>Read Bible</li>
               <li>Ask a Question</li>
@@ -32,7 +32,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="p-5">
-            <h2 className="tracking-wider pb-4 text-lg">Blog</h2>
+            <h2 className="tracking-wider pb-4 text-lg font-semibold">Blog</h2>
             <ul>
               <li>Join our Newsletter</li>
               <li>Articles</li>
@@ -40,15 +40,17 @@ const Footer = () => {
             </ul>
           </div>
           <div className="p-5">
-            <h2 className="tracking-wider pb-4 text-lg">Store</h2>
+            <h2 className="tracking-wider pb-4 text-lg font-semibold">Store</h2>
             <ul>
               <li>Products</li>
               <li>Shop to Donate</li>
             </ul>
           </div>
         </div>
-        <Newsletter />
-        <ul className="list-none flex justify-center py-10 gap-8">
+        <div className="px-6">
+          <Newsletter />
+        </div>
+        <ul className="list-none flex justify-center py-10 md:gap-8 gap-6">
           <a
             href="https://www.instagram.com/jesus/"
             aria-label="Instagram"

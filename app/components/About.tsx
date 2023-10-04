@@ -5,20 +5,21 @@ import jesusLanding from "../../public/landing-about.png";
 
 const About = () => {
   return (
-    <div className="h-full w-full bg-gradient-to-b from-[#53577a] via-[#907d93] to-[#e6b8ae] text-[#2c3047] pt-[110px]">
-      <div className="h-96 relative w-full flex justify-center">
+    <div className="h-full w-full bg-gradient-to-b from-[#D19E99] via-[#907d93] to-[#e6b8ae] text-[#2c3047] pt-[110px]">
+      <div className="h-96 relative w-full flex justify-center ">
         <Image
-          className="w-full object-cover h-96 absolute"
+          className=" absolute object-cover h-[50vh] md:h-96 w-full object-center" 
           quality={100}
           src={jesusLanding}
           alt="jesus"
         ></Image>
         <div className="absolute max-w-2xl mx-auto py-16 px-5">
-          <h1 className="md:text-6xl text-3xl">
+          <h1 className="md:text-6xl text-4xl">
             Just a few things to know <strong>about us</strong>
           </h1>
-          <h2 className="text-lg md:py-0 py-6">
-            Discover who we are, our mission, and how we&#39;re making a difference.
+          <h2 className="text-xl md:py-4 py-6">
+            Discover who we are, our mission, and how we&#39;re making a
+            difference.
           </h2>
           <h2 className="md:max-w-lg max-w-sm">
             We are a dedicated group of individuals committed to fostering a
@@ -27,10 +28,10 @@ const About = () => {
           </h2>
         </div>
       </div>
-      <div className="w-full mx-auto p-6 max-w-2xl">
-        <div className="w-full h-80 ">
+      <div className="w-full mx-auto p-6 max-w-2xl z-30">
+        <div className="w-full h-80 z-30">
           <Image
-            className="w-full h-80 object-center object-cover"
+            className="w-full h-80 object-center object-cover z-30"
             src={jesus}
             alt="jesus"
           ></Image>
