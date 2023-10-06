@@ -15,7 +15,9 @@ const Footer = () => {
       <div className=" border-white/25  backdrop-blur-md border rounded-2xl bg-white/20 pb-3 ">
         <div className="lg:flex sm:grid sm:grid-cols-2 lg:justify-center lg:gap-16 text-[#3a405c] md:p-14 p-8">
           <div className="p-5">
-            <h2 className="tracking-wider pb-4 text-lg font-semibold">Jesus Group</h2>
+            <h2 className="tracking-wider pb-4 text-lg font-semibold">
+              Jesus Group
+            </h2>
             <ul>
               <li>Home</li>
               <li>About</li>
@@ -24,7 +26,9 @@ const Footer = () => {
             </ul>
           </div>
           <div className="p-5">
-            <h2 className="tracking-wider pb-4 text-lg font-semibold">My Faith Buddy</h2>
+            <h2 className="tracking-wider pb-4 text-lg font-semibold">
+              My Faith Buddy
+            </h2>
             <ul>
               <li>Read Bible</li>
               <li>Ask a Question</li>
@@ -47,18 +51,20 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="px-6">
+        <div className="px-10 w-full max-w-2xl md:px-10 mx-auto">
           <Newsletter />
         </div>
-        <ul className="list-none flex justify-center py-10 md:gap-8 gap-6">
-          <a
-            href="https://www.instagram.com/jesus/"
-            aria-label="Instagram"
-            target="_blank"
-          >
-            <FaInstagram size={25} className="fill-[#404664]" />
-          </a>
-          <li>
+        <ul className="list-none flex justify-center py-10 md:gap-8 gap-6 ">
+          <li className="transform hover:-translate-y-1 transition-all duration-300">
+            <a
+              href="https://www.instagram.com/jesus/"
+              aria-label="Instagram"
+              target="_blank"
+            >
+              <FaInstagram size={25} className="fill-[#404664]" />
+            </a>
+          </li>
+          <li className="transform hover:-translate-y-1 transition-all duration-300">
             <a
               href="https://discord.gg/eHYSbYNp"
               aria-label="Discord"
@@ -67,16 +73,17 @@ const Footer = () => {
               <FaDiscord size={25} className="fill-[#404664]" />
             </a>
           </li>
-          <li>
+          <li className="transform hover:-translate-y-1 transition-all duration-300">
             <a
               href="https://www.tiktok.com/@jesus"
               aria-label="TikTok"
               target="_blank"
+              className="transform hover:-translate-y-1 transition-all duration-300"
             >
               <FaTiktok size={25} className="fill-[#404664]" />
             </a>
           </li>
-          <li>
+          <li className="transform hover:-translate-y-1 transition-all duration-300">
             <a
               href="https://www.facebook.com/jesus"
               aria-label="Facebook"
@@ -85,12 +92,12 @@ const Footer = () => {
               <FaFacebookF size={25} className="fill-[#404664]" />
             </a>
           </li>
-          <li>
+          <li className="transform hover:-translate-y-1 transition-all duration-300">
             <a href="https://kick.com/jesus" aria-label="Kick" target="_blank">
               <FaKickstarterK size={25} className="fill-[#404664]" />
             </a>
           </li>
-          <li>
+          <li className="transform hover:-translate-y-1 transition-all duration-300">
             <a
               href="https://www.youtube.com/channel/UCrYCWoIqgrNaQfUWtopoLyg"
               aria-label="YouTube"

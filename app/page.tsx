@@ -60,7 +60,7 @@ export default function Home() {
           </p>
         </div>
         <div className="lg:flex items-center justify-center gap-12 p-8">
-          <div className="shadow-lg shadow-[#907d9378] rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-16 mb-10 lg:mb-0">
+          <div className="shadow-lg hover:shadow-2xl hover:shadow-[#907d9378] shadow-[#907d9378] rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-16 mb-10 lg:mb-0 transform hover:-translate-y-2 transition-all duration-300">
             <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-semibold text-[#37394b] mx-auto max-w-sm">
               MyFaithBuddy
             </h3>
@@ -69,12 +69,12 @@ export default function Home() {
             </p>
             <a
               href="/myfaithbuddy"
-              className="p-4 bg-[#6484ab] text-[#cac9d4] rounded-md"
+              className="p-4 bg-[#6484ab] text-[#dad9e1]  rounded-md"
             >
               Learn More
             </a>
           </div>
-          <div className="shadow-lg shadow-[#907d9378] py-20 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-16 mb-10 lg:mb-0">
+          <div className="shadow-lg hover:shadow-2xl hover:shadow-[#907d9378] shadow-[#907d9378] py-20 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-16 mb-10 lg:mb-0 transform hover:-translate-y-2 transition-all duration-300">
             <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-semibold text-[#37394b] mx-auto max-w-sm">
               Store
             </h3>
@@ -83,12 +83,12 @@ export default function Home() {
             </p>
             <a
               href="/shopify-store"
-              className="p-4 bg-[#6484ab] text-[#cac9d4] rounded-md "
+              className="p-4 bg-[#6484ab] text-[#dad9e1] rounded-md "
             >
               Visit Store
             </a>
           </div>
-          <div className="shadow-lg shadow-[#907d9378] rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-16 mb-10 lg:mb-0">
+          <div className="shadow-lg hover:shadow-2xl hover:shadow-[#907d9378] shadow-[#907d9378] rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-16 mb-10 lg:mb-0 transform hover:-translate-y-2 transition-all duration-300">
             <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-semibold text-[#37394b] mx-auto max-w-sm">
               Blog
             </h3>
@@ -97,7 +97,7 @@ export default function Home() {
             </p>
             <a
               href="/blog-newsletter"
-              className="p-4 bg-[#6484ab] text-[#cac9d4] rounded-md"
+              className="p-4 bg-[#6484ab] text-[#dad9e1] rounded-md"
             >
               Read Blog
             </a>

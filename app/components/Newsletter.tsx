@@ -15,7 +15,7 @@ const Newsletter = () => {
               borderRadius: 0,
               backgroundColor: "transparent",
             }}
-            className="w-full mt-20 px-5 max-w-2xl md:px-10"
+            
           ></iframe>
     </div>
   );
