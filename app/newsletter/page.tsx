@@ -18,7 +18,7 @@ export default function Home() {
         src={angel}
         alt="angel"
         placeholder="blur"
-        className=" h-screen md:max-h-[600px] max-w-3xl top-1/2 left-1/2 mx-auto z-0 object-cover opacity-90 rounded-3xl absolute transform -translate-x-1/2 -translate-y-1/2"
+        className=" h-screen md:max-h-[600px] w-full md:max-w-3xl top-1/2 left-1/2 mx-auto z-0 object-cover opacity-90 rounded-3xl absolute transform -translate-x-1/2 -translate-y-1/2"
       ></Image>
 
       <div className="z-10 ">
@@ -40,7 +40,7 @@ export default function Home() {
               aria-label="Instagram"
               target="_blank"
             >
-              <FaInstagram size={25} className="fill-[#404664]" />
+              <FaInstagram size={30} className="fill-[#46668e]" />
             </a>
           </li>
           <li className="transform hover:-translate-y-1 transition-all duration-300">
@@ -49,7 +49,7 @@ export default function Home() {
               aria-label="Discord"
               target="_blank"
             >
-              <FaDiscord size={25} className="fill-[#404664]" />
+              <FaDiscord size={30} className="fill-[#46668e]" />
             </a>
           </li>
           <li className="transform hover:-translate-y-1 transition-all duration-300">
@@ -59,7 +59,7 @@ export default function Home() {
               target="_blank"
               className="transform hover:-translate-y-1 transition-all duration-300"
             >
-              <FaTiktok size={25} className="fill-[#404664]" />
+              <FaTiktok size={30} className="fill-[#46668e]" />
             </a>
           </li>
           <li className="transform hover:-translate-y-1 transition-all duration-300">
@@ -68,12 +68,12 @@ export default function Home() {
               aria-label="Facebook"
               target="_blank"
             >
-              <FaFacebookF size={25} className="fill-[#404664]" />
+              <FaFacebookF size={30} className="fill-[#46668e]" />
             </a>
           </li>
           <li className="transform hover:-translate-y-1 transition-all duration-300">
             <a href="https://kick.com/jesus" aria-label="Kick" target="_blank">
-              <FaKickstarterK size={25} className="fill-[#404664]" />
+              <FaKickstarterK size={30} className="fill-[#46668e]" />
             </a>
           </li>
           <li className="transform hover:-translate-y-1 transition-all duration-300">
@@ -82,7 +82,7 @@ export default function Home() {
               aria-label="YouTube"
               target="_blank"
             >
-              <FaYoutube size={25} className="fill-[#404664]" />
+              <FaYoutube size={30} className="fill-[#46668e]" />
             </a>
           </li>
         </ul>
