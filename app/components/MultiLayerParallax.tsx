@@ -57,6 +57,7 @@ export default function MultiLayerParallax() {
             alt="landing"
             quality={100}
             className="object-cover relative h-full w-full "
+            placeholder="blur"
           ></Image>
         </motion.div>
         <div
@@ -77,13 +78,6 @@ export default function MultiLayerParallax() {
           }}
         />
 
-        {/* <Image
-        src={exclude}
-        priority={true}
-        alt="landing"
-        quality={100}
-        className="object-cover bg-bottom h-full w-full "
-      ></Image> */}
       </div>
       <motion.div
         className="h-[810px] w-full z-50 absolute"

@@ -5,7 +5,7 @@ import logo from "../../public/logojlight.png";
 import Image from "next/image";
 import Link from "next/link";
 import { Fade as Hamburger } from "hamburger-react";
-import { usePathname } from 'next/navigation';
+import { usePathname } from "next/navigation";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -127,16 +127,14 @@ const Navbar: React.FC = () => {
           isOpen ? "translate-x-0" : "translate-x-full"
         } fixed top-0 right-0 w-1/2 h-full text-lg uppercase text-center pt-28 md:hidden z-[90]  duration-500 border-l border-white/20 backdrop-filter  backdrop-blur-md`}
       >
-        <nav className="px-4 pt-4 flex flex-col gap-6 w-full [&>*]:p-2 items-center tracking-[0.2em]">
+        <nav className=" flex flex-col gap-6 w-full [&>*]:p-4 items-center tracking-[0.2em] text-[#2c3047]">
           <Link
             href="/"
             onClick={() => setIsOpen(false)}
-            className={`w-32 border bg-white/20 rounded-md p-2 ${
+            className={`w-40 border rounded-md ${
               isActive("/")
-                ? navbg
-                  ? "text-[#3a405c]"
-                  : "shadow-white"
-                : "border-transparent bg-white/0"
+                ? "text-white bg-[#202e7f1e]"
+                : "border-transparent bg-none"
             }`}
           >
             Home
@@ -144,12 +142,10 @@ const Navbar: React.FC = () => {
           <Link
             href="/about"
             onClick={() => setIsOpen(false)}
-            className={`w-32 border  bg-white/20 rounded-md  p-2 ${
+            className={`w-40 border   rounded-md  p-2 ${
               isActive("/about")
-                ? navbg
-                  ? "text-[#3a405c]"
-                  : "shadow-white"
-                : "border-transparent bg-white/0 "
+                ? "text-white bg-[#202e7f1e]"
+                : "border-transparent bg-none"
             }`}
           >
             About
@@ -157,12 +153,10 @@ const Navbar: React.FC = () => {
           <Link
             href="/myfaithbuddy"
             onClick={() => setIsOpen(false)}
-            className={`w-32 border  bg-white/20 rounded-md  p-2 ${
+            className={`w-40 border   rounded-md  p-2 ${
               isActive("/myfaithbuddy")
-                ? navbg
-                  ? "text-[#3a405c]"
-                  : "shadow-white"
-                : "border-transparent bg-white/0"
+                ? "text-white bg-[#202e7f1e]"
+                : "border-transparent bg-none"
             }`}
           >
             My Faith Buddy
@@ -170,25 +164,21 @@ const Navbar: React.FC = () => {
           <Link
             href="/blog"
             onClick={() => setIsOpen(false)}
-            className={`w-32 border  bg-white/20 rounded-md  p-2 ${
+            className={`w-40 border   rounded-md  p-2 ${
               isActive("/blog")
-                ? navbg
-                  ? "text-[#3a405c]"
-                  : "shadow-white"
-                : "border-transparent bg-white/0"
+                ? "text-white bg-[#202e7f1e]"
+                : "border-transparent bg-none"
             }`}
           >
             Blog
           </Link>
           <Link
-            href="/"
+            href="/newsletter"
             onClick={() => setIsOpen(false)}
-            className={`w-32 border  bg-white/20 rounded-md  p-2 ${
+            className={`w-40 border   rounded-md   ${
               isActive("/newsletter")
-                ? navbg
-                  ? "text-[#3a405c]"
-                  : "shadow-white"
-                : "border-transparent bg-white/0"
+                ? "text-white bg-[#202e7f1e]"
+                : "border-transparent bg-none"
             }`}
           >
             Newsletter
@@ -196,12 +186,10 @@ const Navbar: React.FC = () => {
           <Link
             href="/"
             onClick={() => setIsOpen(false)}
-            className={`w-32 border  bg-white/20 rounded-md  ${
+            className={`w-40 border   rounded-md  ${
               isActive("/store")
-                ? navbg
-                  ? "text-[#3a405c]"
-                  : "shadow-white"
-                : "border-transparent bg-white/0"
+                ? "text-white bg-[#202e7f1e]"
+                : "border-transparent bg-none"
             }`}
           >
             Store

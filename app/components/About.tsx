@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import jesus from "../../public/logojesuslight.png";
 import jesusLanding from "../../public/landing-about.png";
-import {FaDiscord} from "react-icons/fa"
+import { FaDiscord } from "react-icons/fa";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -75,17 +76,25 @@ const About = () => {
                 src={jesusLanding}
                 alt="clouds"
                 quality={100}
+                placeholder="blur"
               />
-               <FaDiscord size={60} className="fill-[#53577a] absolute "/>
+              <FaDiscord size={60} className="fill-[#53577a] absolute " />
             </div>
             <div className="absolute inset-0 h-full w-full rounded-full bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
               <div className="flex min-h-full flex-col items-center justify-center">
-                <h1 className="text-3xl font-semibold tracking-wider">Join Our Discord</h1>
+                <h1 className="text-3xl font-semibold tracking-wider">
+                  Join Our Discord
+                </h1>
                 <p className="text-lg font-semibold">+8500 users</p>
                 <p className="text-base pb-2">Ask, Discuss and Learn</p>
-                <button className=" rounded-md bg-[#53577a] py-4 px-8 text-sm hover:bg-neutral-900">
+                <a
+                  className=" rounded-md bg-[#53577a] py-4 px-8 text-sm hover:bg-neutral-900"
+                  href="https://discord.gg/eHYSbYNp"
+                  aria-label="Discord"
+                  target="_blank"
+                >
                   Join
-                </button>
+                </a>
               </div>
             </div>
           </div>
