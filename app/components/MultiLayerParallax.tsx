@@ -1,9 +1,13 @@
-"use client"
+"use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import Image from "next/image";
-import landing from "../../public/base.jpg"
-import exclude from "../../public/exclude.png"
+import landing from "../../public/base.jpg";
+import second_layer from "../../public/second-layer.png";
+import third_layer from "../../public/third-layer.png";
+import bottom_layer from "../../public/bottom-layer.png";
+
+import exclude from "../../public/exclude.png";
 
 export default function MultiLayerParallax() {
   const ref = useRef(null);
@@ -13,7 +17,7 @@ export default function MultiLayerParallax() {
   });
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   const backgroundY2 = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
-  const backgroundY3 = useTransform(scrollYProgress, [0, 1], ["-30%", "-85%"]);
+  const backgroundY3 = useTransform(scrollYProgress, [0, 1], ["-30%", "-90%"]);
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
 
   return (
@@ -45,9 +49,6 @@ export default function MultiLayerParallax() {
         <motion.div
           className="absolute inset-0 z-0"
           style={{
-            // backgroundImage: `url(/landing2.png)`,
-            // backgroundPosition: "bottom",
-            // backgroundSize: "cover",
             y: backgroundY,
           }}
         >
@@ -56,38 +57,59 @@ export default function MultiLayerParallax() {
             priority={true}
             alt="landing"
             quality={100}
-            className="object-cover relative h-full w-full "
+            className="object-cover object-bottom relative h-full w-full "
             placeholder="blur"
+            sizes="100vw" 
           ></Image>
         </motion.div>
-        <div
-          className="absolute inset-0 z-10"
-          style={{
-            backgroundImage: `url(/second-layer.png)`,
-            backgroundPosition: "bottom",
-            backgroundSize: "cover",
-          }}
-        />
+        <div className="absolute inset-0 z-10">
+          <Image
+            src={second_layer}
+            priority={true}
+            alt="landing"
+            quality={100}
+            className="object-cover object-bottom relative h-full w-full"
+            placeholder="blur"
+            sizes="100vw" 
+
+          ></Image>
+        </div>
+
         <motion.div
           className="absolute inset-0 z-20"
           style={{
-            backgroundImage: `url(/third-layer.png)`,
-            backgroundPosition: "bottom",
-            backgroundSize: "cover",
             y: backgroundY2,
           }}
-        />
+        >
+          <Image
+            src={third_layer}
+            priority={true}
+            alt="landing"
+            quality={100}
+            className="object-cover object-bottom relative h-full w-full"
+            placeholder="blur"
+            sizes="100vw" 
 
+          ></Image>
+        </motion.div>
       </div>
       <motion.div
-        className="object-cover  h-full w-full z-30 absolute mx-auto"
+        className="object-cover object-bottom  h-full w-full z-30 absolute mx-auto"
         style={{
-          backgroundImage: `url(/bottom-layer.png)`,
-          backgroundPosition: "bottom",
-          backgroundSize: "cover",
           y: backgroundY3,
         }}
-      />
+      >
+        <Image
+          src={bottom_layer}
+          priority={true}
+          alt="landing"
+          quality={100}
+          className="object-cover object-bottom  relative h-full w-full"
+          placeholder="blur"
+          sizes="100vw" 
+
+        ></Image>
+      </motion.div>
     </div>
   );
 }
