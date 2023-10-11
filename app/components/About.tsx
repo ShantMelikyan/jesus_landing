@@ -37,13 +37,12 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-80 z-30">
-        <Image
-          className="w-full h-80 object-center object-cover z-30 opacity-70"
-          src={jesus}
-          alt="jesus"
-        ></Image>
-      </div>
+      <Image
+        className="mx-auto w-[1200px] h-[500px] overflow-visible object-center object-cover opacity-70 pb-20"
+        src={jesus}
+        alt="jesus"
+      ></Image>
+
       <div className="w-full mx-auto p-6 max-w-2xl z-30">
         <p className="py-2">
           On our Instagram account, we have been sharing inspiring stories,

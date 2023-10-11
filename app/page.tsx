@@ -6,37 +6,10 @@ import MultiLayerParallax from "./components/MultiLayerParallax";
 export default function Home() {
   return (
     <main className="h-full w-full">
-      <div className="h-screen flex flex-col items-center justify-center relative">
+      <div className="h-screen flex flex-col items-center justify-center ">
         <MultiLayerParallax />
-        {/* <Image
-          src={landing}
-          priority={true}
-          alt="landing"
-          quality={100}
-          className="object-cover h-full w-full "
-        ></Image>
-        <iframe
-          src="https://embeds.beehiiv.com/32c167b5-f949-4fb7-9f73-363fb45d6438?slim=true"
-          data-test-id="beehiiv-embed"
-          height="52"
-          width="100%"
-          frameBorder="0"
-          scrolling="no"
-          style={{
-            margin: 0,
-            borderRadius: 0,
-            backgroundColor: "transparent",
-          }}
-          className="absolute mt-20 px-10 max-w-2xl"
-        ></iframe>
-        <h1 className="text-3xl py-5 absolute  text-white">
-          Welcome to Jesus Group
-        </h1>
-        <h2 className="text-xl pt-20 absolute text-white">
-          Your Journey to Faith and Inspiration
-        </h2>  */}
       </div>
-      <section className="text-center w-full bg-gradient-to-b from-[#53577a] via-[#907d93] to-[#e6b8ae] pt-32">
+      <section className="h-full text-center w-full bg-gradient-to-b from-[#53577a] via-[#907d93] to-[#e6b8ae] pt-32">
         <div className="md:flex  items-center justify-center py-20 mx-auto max-w-6xl border-b border-[#907d93]">
           <h2 className="leading-10 tracking-widest mx-auto text-3xl md:text-left text-center font-semibold w-48 pb-10 md:pb-0 text-[#2c3047]">
             Discover a Community Driven by Faith and Purpose

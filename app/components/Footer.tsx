@@ -8,10 +8,11 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import Newsletter from "./Newsletter";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-t from-[#53577a] to-[#e6b8ae] p-8 ">
+    <div className="h-full bg-gradient-to-t from-[#53577a] to-[#e6b8ae] p-8 ">
       <div className=" border-white/25  backdrop-blur-md border rounded-2xl bg-white/20 pb-3 ">
         <div className="lg:flex sm:grid sm:grid-cols-2 lg:justify-center lg:gap-16 text-[#3a405c] md:p-14 p-8">
           <div className="p-5">
@@ -19,10 +20,10 @@ const Footer = () => {
               Jesus Group
             </h2>
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
-              <li>Subscribe</li>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/about">About</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="/newsletter">Subscribe</Link></li>
             </ul>
           </div>
           <div className="p-5">

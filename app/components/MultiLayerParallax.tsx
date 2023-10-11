@@ -2,7 +2,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import Image from "next/image";
-import landing from "../../public/landing2.png"
+import landing from "../../public/base.jpg"
 import exclude from "../../public/exclude.png"
 
 export default function MultiLayerParallax() {
@@ -12,19 +12,19 @@ export default function MultiLayerParallax() {
     offset: ["start start", "end start"],
   });
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const backgroundY2 = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
-  const backgroundY3 = useTransform(scrollYProgress, [0, 1], ["-30%", "-70%"]);
+  const backgroundY2 = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
+  const backgroundY3 = useTransform(scrollYProgress, [0, 1], ["-30%", "-85%"]);
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
 
   return (
-    <div className="h-full w-full relative">
+    <div className="h-full w-full relative ">
       <div
         ref={ref}
         className="w-full h-full overflow-hidden relative grid place-items-center"
       >
         <motion.div
           style={{ y: textY }}
-          className="relative z-50 w-full grid place-items-center"
+          className="relative z-20 w-full grid place-items-center"
         >
           <iframe
             src="https://embeds.beehiiv.com/32c167b5-f949-4fb7-9f73-363fb45d6438?slim=true"
@@ -61,17 +61,17 @@ export default function MultiLayerParallax() {
           ></Image>
         </motion.div>
         <div
-          className="absolute inset-0 z-20"
+          className="absolute inset-0 z-10"
           style={{
-            backgroundImage: `url(/exclude.png)`,
+            backgroundImage: `url(/second-layer.png)`,
             backgroundPosition: "bottom",
             backgroundSize: "cover",
           }}
         />
         <motion.div
-          className="absolute inset-0 z-30"
+          className="absolute inset-0 z-20"
           style={{
-            backgroundImage: `url(/exclude2.png)`,
+            backgroundImage: `url(/third-layer.png)`,
             backgroundPosition: "bottom",
             backgroundSize: "cover",
             y: backgroundY2,
@@ -80,9 +80,9 @@ export default function MultiLayerParallax() {
 
       </div>
       <motion.div
-        className="h-[810px] w-full z-50 absolute"
+        className="object-cover  h-full w-full z-30 absolute mx-auto"
         style={{
-          backgroundImage: `url(/flipped.png)`,
+          backgroundImage: `url(/bottom-layer.png)`,
           backgroundPosition: "bottom",
           backgroundSize: "cover",
           y: backgroundY3,
