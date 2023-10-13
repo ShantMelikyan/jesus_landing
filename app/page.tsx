@@ -5,11 +5,11 @@ import MultiLayerParallax from "./components/MultiLayerParallax";
 
 export default function Home() {
   return (
-    <main className="h-full w-full">
+    <main className="h-full w-full bg-gradient-to-b from-[#53577a] via-[#907d93] to-[#e6b8ae]">
       <div className="h-screen flex flex-col items-center justify-center ">
         <MultiLayerParallax />
       </div>
-      <section className="h-full text-center w-full bg-gradient-to-b from-[#53577a] via-[#907d93] to-[#e6b8ae] pt-32">
+      <section className="h-full text-center w-full  pt-32">
         <div className="md:flex  items-center justify-center py-20 mx-auto max-w-6xl border-b border-[#907d93]">
           <h2 className="leading-10 tracking-widest mx-auto text-3xl md:text-left text-center font-semibold w-48 pb-10 md:pb-0 text-[#2c3047]">
             Discover a Community Driven by Faith and Purpose
