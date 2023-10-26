@@ -9,6 +9,7 @@ import bottom_layer from "../../public/bottom-layer.png";
 
 import exclude from "../../public/exclude.png";
 import { Reveal } from "./utils/Reveal";
+import Newsletter from "./Newsletter";
 
 export default function MultiLayerParallax() {
   const ref = useRef(null);
@@ -31,36 +32,25 @@ export default function MultiLayerParallax() {
       >
         <motion.div
           style={{ y: subscribeBox }}
-          className=" z-30 w-full max-w-xl text-[#37394b]"
+          className=" z-30 w-full max-w-xl text-[#37394b] flex flex-col justify-center"
         >
           <Reveal delay={0.3}>
-            <h1 className="text-5xl pb-6 text-center">
+            <h1 className="lg:text-[2.6rem] text-3xl pb-2 text-center">
               Join Our Community of Faith!
             </h1>
           </Reveal>
           <Reveal delay={0.4}>
-            <h2 className="text-2xl pb-4 text-center">
+            <h2 className="md:text-2xl  text-lg pb-4 text-center">
               Subscribe to our Newsletter for Weekly Inspiration
             </h2>
           </Reveal>
           <Reveal delay={0.5}>
-            <iframe
-              src="https://embeds.beehiiv.com/32c167b5-f949-4fb7-9f73-363fb45d6438?slim=true"
-              data-test-id="beehiiv-embed"
-              height="52"
-              width="100%"
-              frameBorder="0"
-              scrolling="no"
-              style={{
-                margin: 0,
-                borderRadius: 0,
-                backgroundColor: "transparent",
-              }}
-              className="w-full"
-            ></iframe>
+            <div className="max-w-lg mx-auto">
+            <Newsletter/>
+            </div>
           </Reveal>
           <Reveal delay={0.6}>
-            <div className="w-full flex justify-center items-center  text-lg z-30 pt-10">
+            <div className="w-full flex max-w-lg justify-between items-center  text-lg z-30 pt-10 mx-auto">
               <div className="w-44 h-14 rounded-md border-2 border-[#6484AB] flex justify-center items-center  backdrop-blur ">
                 <p>MyFaithBuddy</p>
               </div>
