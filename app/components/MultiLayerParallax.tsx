@@ -17,9 +17,10 @@ export default function MultiLayerParallax() {
     offset: ["start start", "end start"],
   });
 
-  const base = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
-  const second = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
-  const third = useTransform(scrollYProgress, [0, 1], ["-30%", "-90%"]);
+  const second = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
+  const third = useTransform(scrollYProgress, [0, 1], ["0%", "-35%"]);
+  const bottom = useTransform(scrollYProgress, [0, 1], ["-40%", "-90%"]);
+
   const subscribeBox = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
@@ -59,26 +60,19 @@ export default function MultiLayerParallax() {
             ></iframe>
           </Reveal>
           <Reveal delay={0.6}>
-            <div className="w-full flex justify-center items-center  text-xl z-30 pt-10">
-              <div className="w-40 h-14 rounded-md border-2 border-[#6484AB] flex justify-center items-center  backdrop-blur ">
+            <div className="w-full flex justify-center items-center  text-lg z-30 pt-10">
+              <div className="w-44 h-14 rounded-md border-2 border-[#6484AB] flex justify-center items-center  backdrop-blur ">
                 <p>MyFaithBuddy</p>
               </div>
-              <p className="text-4xl px-10">✝</p>
-              <div className="w-40 h-14 rounded-md border-2 border-[#6484AB] flex justify-center items-center  backdrop-blur ">
+              <p className="text-4xl px-10">✞</p>
+              <div className="w-44 h-14 rounded-md border-2 border-[#6484AB] flex justify-center items-center  backdrop-blur ">
                 <p>Blog</p>
               </div>
             </div>
           </Reveal>
         </motion.div>
 
-        <motion.div
-          className=" inset-0 z-0 pointer-events-none fixed"
-          style={
-            {
-              // y: base,
-            }
-          }
-        >
+        <div className=" inset-0 z-0 pointer-events-none fixed">
           <Image
             src={base_layer}
             priority={true}
@@ -88,7 +82,7 @@ export default function MultiLayerParallax() {
             placeholder="blur"
             sizes="100vw"
           ></Image>
-        </motion.div>
+        </div>
         <motion.div className="absolute inset-0 z-10" style={{ y: second }}>
           <Image
             src={second_layer}
@@ -101,7 +95,7 @@ export default function MultiLayerParallax() {
           ></Image>
         </motion.div>
 
-        <motion.div className="absolute inset-0 z-20" style={{ y: base }}>
+        <motion.div className="absolute inset-0 z-20" style={{ y: third }}>
           <Image
             src={third_layer}
             priority={true}
@@ -114,9 +108,9 @@ export default function MultiLayerParallax() {
         </motion.div>
       </div>
       <motion.div
-        className="xl:h-full h-2/4 z-30 absolute"
+        className="xl:h-full lg:h-2/3 h-2/4 z-30 absolute"
         style={{
-          y: third,
+          y: bottom,
         }}
       >
         <Image
@@ -124,7 +118,7 @@ export default function MultiLayerParallax() {
           priority={true}
           alt="landing"
           quality={100}
-          className="object-cover object-left md:object-center relative h-full w-full "
+          className="object-cover object-left lg:object-center relative h-full w-full "
           placeholder="blur"
           sizes="100vw"
         ></Image>
