@@ -18,7 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={rajdhani.className}>
+      <body className=
+      {`${rajdhani.className} antialiased`}>
         <Navbar />
         {children}
         <Footer />

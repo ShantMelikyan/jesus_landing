@@ -20,11 +20,11 @@ export default function Home() {
             power of spirituality and meaningful engagement.
           </p>
         </div>
-        <div className="p-20 mx-auto max-w-2xl">
+        <div className="py-20 px-12 mx-auto max-w-2xl">
           <h2 className="tracking-widest text-3xl py-4 font-semibold text-[#2c3047]">
             Our Mission
           </h2>
-          <p className="text-lg text-[#212336]">
+          <p className="text-lg text-[#212336] w-60 mx-auto">
             Our mission is to create a positive impact by blending faith,
             technology, and community. Through our diverse projects — from
             AI-powered Biblical exploration to a marketplace of Christian-themed
@@ -32,12 +32,12 @@ export default function Home() {
             faith-based.
           </p>
         </div>
-        <div className="lg:flex items-center justify-center gap-12 p-8">
-          <div className="shadow-lg hover:shadow-2xl hover:shadow-[#907d9378] shadow-[#907d9378] rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-16 mb-10 lg:mb-0 transform hover:-translate-y-2 transition-all duration-300">
-            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-semibold text-[#37394b] mx-auto max-w-sm">
+        <div className="lg:flex items-center justify-center gap-12 p-8 max-w-6xl mx-auto">
+          <div className="flex-1 max-w-2xl mx-auto shadow-lg hover:shadow-2xl hover:shadow-[#907d9378] shadow-[#907d9378] py-14 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-4 mb-10 lg:mb-0 transform hover:-translate-y-2 transition-all duration-300">
+            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-semibold text-[#37394b] mx-auto max-w-[180px]">
               MyFaithBuddy
             </h3>
-            <p className="py-10 text-lg w-52 p-6 mx-auto text-[#37394b]">
+            <p className="py-10 text-lg  w-52 mx-auto text-[#37394b]">
               Browse, read, and explore the Bible like never before.
             </p>
             <a
@@ -47,11 +47,11 @@ export default function Home() {
               Learn More
             </a>
           </div>
-          <div className="shadow-lg hover:shadow-2xl hover:shadow-[#907d9378] shadow-[#907d9378] py-20 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-16 mb-10 lg:mb-0 transform hover:-translate-y-2 transition-all duration-300">
-            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-semibold text-[#37394b] mx-auto max-w-sm">
+          <div className="flex-1 max-w-2xl mx-auto shadow-lg hover:shadow-2xl hover:shadow-[#907d9378] shadow-[#907d9378] py-20 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-4 mb-10 lg:mb-0 transform hover:-translate-y-2 transition-all duration-300">
+            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-semibold text-[#37394b] mx-auto max-w-[180px]">
               Store
             </h3>
-            <p className="py-10 text-lg w-52 p-6 mx-auto text-[#37394b]">
+            <p className="py-10 text-lg w-52 mx-auto text-[#37394b]">
               Christian-themed items that inspire and uplift.
             </p>
             <a
@@ -61,11 +61,11 @@ export default function Home() {
               Visit Store
             </a>
           </div>
-          <div className="shadow-lg hover:shadow-2xl hover:shadow-[#907d9378] shadow-[#907d9378] rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-16 mb-10 lg:mb-0 transform hover:-translate-y-2 transition-all duration-300">
-            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-semibold text-[#37394b] mx-auto max-w-sm">
+          <div className="flex-1 max-w-2xl mx-auto  shadow-lg hover:shadow-2xl hover:shadow-[#907d9378] shadow-[#907d9378] py-14 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-4 mb-10 lg:mb-0 transform hover:-translate-y-2 transition-all duration-300">
+            <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-semibold text-[#37394b] mx-auto max-w-[180px]">
               Blog
             </h3>
-            <p className="py-10 text-lg w-52 p-6 mx-auto text-[#37394b]">
+            <p className="py-10 text-lg w-52 mx-auto text-[#37394b]">
               Stay updated with the latest articles and insights.
             </p>
             <a

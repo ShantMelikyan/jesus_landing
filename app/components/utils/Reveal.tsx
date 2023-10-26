@@ -4,32 +4,34 @@ import { motion, useInView, useAnimation } from "framer-motion";
 
 interface Props {
   children: JSX.Element;
+  delay?: number; // Optional delay prop
 }
-export const Reveal = ({ children }: Props) => {
+
+export const Reveal = ({ children, delay = 0.3 }: Props) => { // Default value for delay is set to 0.3
   const ref = useRef(null);
-  const isinView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
 
   useEffect(() => {
-    if (isinView) {
+    if (isInView) {
       mainControls.start("visible");
     }
-  }, [isinView]);
+  }, [isInView]);
 
   return (
     <div ref={ref} className="w-full">
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 100 },
+          hidden: { opacity: 0, y: 200 },
           visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
         animate={mainControls}
         transition={{
-          duration: 0.5,
-          delay: 0.3,
+          duration: 1,
+          delay: delay, 
         }}
-        className="flex justify-center w-full"
+
       >
         {children}
       </motion.div>

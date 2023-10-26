@@ -18,7 +18,7 @@ export default function Home() {
         src={angel}
         alt="angel"
         placeholder="blur"
-        className=" h-screen lg:p-4 lg:max-h-[600px] w-full lg:max-w-3xl top-1/2 left-1/2 mx-auto z-0 object-top object-cover opacity-90 rounded-b-2xl lg:rounded-3xl absolute transform -translate-x-1/2 -translate-y-1/2"
+        className=" h-screen lg:p-4 lg:max-h-[600px] lg:max-w-3xl lg:rounded-3xl w-full top-1/2 left-1/2 mx-auto z-0 object-top object-cover opacity-90 rounded-b-2xl  absolute transform -translate-x-1/2 -translate-y-1/2"
       ></Image>
 
       <div className="z-10 ">

@@ -67,7 +67,7 @@ const Footer = () => {
           </li>
           <li className="transform hover:-translate-y-1 transition-all duration-300">
             <a
-              href="https://discord.gg/eHYSbYNp"
+              href="https://discord.gg/jesus"
               aria-label="Discord"
               target="_blank"
             >
