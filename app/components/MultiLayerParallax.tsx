@@ -32,13 +32,13 @@ export default function MultiLayerParallax() {
   const third = useTransform(scrollYProgress, [0, 1], ["0%", "-35%"]);
   const bottom = useTransform(scrollYProgress, [0, 1], ["-34%", "-90%"]);
 
-  const subscribeBox = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const subscribeBox = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
 
   return (
     <div className="h-full w-full relative will-change-transform">
       <div
         ref={ref}
-        className="w-full h-full overflow-hidden relative flex items-center flex-col justify-center px-8"
+        className="w-full h-full overflow-hidden relative flex items-center flex-col justify-center px-6"
       >
         <motion.div
           style={{ y: subscribeBox }}
@@ -49,10 +49,12 @@ export default function MultiLayerParallax() {
               <Image
                 src={logo}
                 alt="logo"
-                className="h-28 mx-auto object-cover opacity-90 "
+               
+                width={350}
+                className="h-28  mx-auto object-cover opacity-90 "
               ></Image>
               <Reveal delay={0.3}>
-                <h1 className="lg:text-3xl text-2xl pb-4 md:py-4 text-center">
+                <h1 className="lg:text-2xl text-2xl pb-4 md:py-4 text-center ">
                   Join Our Community of Faith
                 </h1>
               </Reveal>
@@ -69,7 +71,7 @@ export default function MultiLayerParallax() {
                   </li>
                   <li className="transform hover:-translate-y-1 transition-all duration-300">
                     <a
-                      href="https://discord.gg/eHYSbYNp"
+                      href="https://discord.gg/jesus"
                       aria-label="Discord"
                       target="_blank"
                     >
@@ -117,7 +119,7 @@ export default function MultiLayerParallax() {
               </Reveal>
 
               <Reveal delay={0.5}>
-                <div className="max-w-sm  mx-auto">
+                <div className="max-w-[20rem] md:max-w-sm  mx-auto pb-2">
                 <Newsletter />
                 </div>
               </Reveal>
@@ -125,7 +127,7 @@ export default function MultiLayerParallax() {
           </Reveal>
 
           <Reveal delay={0.6}>
-            <div className=" w-full md:flex md:flex-row max-w-xl justify-between items-start text-lg z-30 pt-4 mx-auto gap-6">
+            <div className=" w-full md:flex md:flex-row max-w-xl justify-between items-start text-lg z-30 pt-4 mx-auto gap-6 ">
               <div className="flex pb-3 items-center flex-1">
                 <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center  backdrop-blur divide-y divide-[#6484ab83]">
                   <p className="p-4">FaithBuddy</p>
@@ -144,7 +146,7 @@ export default function MultiLayerParallax() {
                   </p>
                 </div>
               </div>
-              <div className="flex pb-3 items-center flex-1">
+              <div className="flex pb-3 items-center flex-1 z-[100]">
                 <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center  backdrop-blur divide-y divide-[#6484ab83]">
                   <p className="p-4">Store</p>
                   <p className="p-4">
@@ -180,7 +182,7 @@ export default function MultiLayerParallax() {
           ></Image>
         </motion.div>
 
-        <motion.div className="absolute inset-0 z-20" style={{ y: third }}>
+        <motion.div className="absolute inset-0 z-20 " style={{ y: third }}>
           <Image
             src={third_layer}
             priority={true}
@@ -193,7 +195,7 @@ export default function MultiLayerParallax() {
         </motion.div>
       </div>
       <motion.div
-        className="xl:h-full lg:h-2/3 h-2/4 z-30 absolute"
+        className="md:h-full w-full h-2/4 z-30 absolute overflow-visible"
         style={{
           y: bottom,
         }}
@@ -203,7 +205,7 @@ export default function MultiLayerParallax() {
           priority={true}
           alt="landing"
           quality={100}
-          className="object-cover object-left lg:object-center relative h-full w-full "
+          className="object-cover object-left lg:object-center  h-full w-full "
           placeholder="blur"
           sizes="100vw"
         ></Image>
