@@ -10,11 +10,11 @@ export default function Home() {
         <MultiLayerParallax />
       </div>
       <section className="h-full text-center w-full  pt-32">
-        <div className="md:flex  items-center justify-center py-20 mx-auto max-w-6xl border-b border-[#907d93]">
-          <h2 className="leading-10 tracking-widest mx-auto text-3xl md:text-left text-center font-semibold w-48 pb-10 md:pb-0 text-[#2c3047]">
+        <div className="text-center items-center justify-center py-20 px-4 mx-auto max-w-5xl border-b border-[#907d93]">
+          <h2 className="tracking-widest mx-auto md:text-6xl text-3xl text-center uppercase font-semibold pb-10 bg-gradient-to-r from-[#2c3047]  to-[#51455c] text-transparent bg-clip-text">
             Discover a Community Driven by Faith and Purpose
           </h2>
-          <p className="mx-auto w-60 text-lg leading-8 text-[#212336]">
+          <p className="mx-auto  md:text-2xl  text-lg text-[#212336]">
             Welcome to Jesus Group, where faith meets action and purpose.
             We&apos;re a community committed to enriching lives through the
             power of spirituality and meaningful engagement.

@@ -10,7 +10,7 @@ const About = () => {
     <div className="h-full w-full bg-gradient-to-b from-[#53577a] via-[#907d93] to-[#e6b8ae] text-[#2c3047]">
       <div className="h-screen items-center w-full  flex flex-col md:flex-row justify-center gap-8 pt-[130px] lg:pt-0">
         <div className="flex-1  max-w-xl  px-5 flex flex-col justify-end">
-          <h1 className="lg:text-6xl text-4xl">
+          <h1 className="lg:text-6xl text-4xl  bg-gradient-to-r from-[#2c3047]  to-[#655672] text-transparent bg-clip-text">
             Just a few things to know <strong>about us</strong>
           </h1>
           <h2 className="text-xl md:py-4 py-6">

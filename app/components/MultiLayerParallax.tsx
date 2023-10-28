@@ -1,4 +1,13 @@
 "use client";
+
+import {
+  FaInstagram,
+  FaDiscord,
+  FaTiktok,
+  FaFacebookF,
+  FaKickstarterK,
+  FaYoutube,
+} from "react-icons/fa";
 import { motion, useAnimation, useScroll, useTransform } from "framer-motion";
 import React, { useRef, useState } from "react";
 import Image from "next/image";
@@ -6,6 +15,7 @@ import base_layer from "../../public/base.jpg";
 import second_layer from "../../public/second-layer.png";
 import third_layer from "../../public/third-layer.png";
 import bottom_layer from "../../public/bottom-layer.png";
+import logo from "@/public/logojesusdark.png";
 
 import exclude from "../../public/exclude.png";
 import { Reveal } from "./utils/Reveal";
@@ -20,7 +30,7 @@ export default function MultiLayerParallax() {
 
   const second = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
   const third = useTransform(scrollYProgress, [0, 1], ["0%", "-35%"]);
-  const bottom = useTransform(scrollYProgress, [0, 1], ["-40%", "-90%"]);
+  const bottom = useTransform(scrollYProgress, [0, 1], ["-34%", "-90%"]);
 
   const subscribeBox = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
@@ -28,35 +38,120 @@ export default function MultiLayerParallax() {
     <div className="h-full w-full relative will-change-transform">
       <div
         ref={ref}
-        className="w-full h-full overflow-hidden relative flex items-center flex-col justify-center px-10"
+        className="w-full h-full overflow-hidden relative flex items-center flex-col justify-center px-8"
       >
         <motion.div
           style={{ y: subscribeBox }}
           className=" z-30 w-full max-w-xl text-[#37394b] flex flex-col justify-center"
         >
-          <Reveal delay={0.3}>
-            <h1 className="lg:text-[2.6rem] text-3xl pb-2 text-center">
-              Join Our Community of Faith!
-            </h1>
-          </Reveal>
-          <Reveal delay={0.4}>
-            <h2 className="md:text-2xl  text-lg pb-4 text-center">
-              Subscribe to our Newsletter for Weekly Inspiration
-            </h2>
-          </Reveal>
-          <Reveal delay={0.5}>
-            <div className="max-w-lg mx-auto">
-            <Newsletter/>
+          <Reveal>
+            <div className="shadow-lg w-full  max-w-xl mx-auto flex justify-center flex-col p-2 md:p-6 rounded-2xl  backdrop-blur-sm">
+              <Image
+                src={logo}
+                alt="logo"
+                className="h-28 mx-auto object-cover opacity-90 "
+              ></Image>
+              <Reveal delay={0.3}>
+                <h1 className="lg:text-3xl text-2xl pb-4 md:py-4 text-center">
+                  Join Our Community of Faith
+                </h1>
+              </Reveal>
+              <Reveal delay={0.4}>
+                <ul className="  list-none flex justify-center items-center md:gap-8 gap-5 pb-6">
+                  <li className="transform hover:-translate-y-1 transition-all duration-300">
+                    <a
+                      href="https://www.instagram.com/jesus/"
+                      aria-label="Instagram"
+                      target="_blank"
+                    >
+                      <FaInstagram size={30} className="fill-[#46668e]" />
+                    </a>
+                  </li>
+                  <li className="transform hover:-translate-y-1 transition-all duration-300">
+                    <a
+                      href="https://discord.gg/eHYSbYNp"
+                      aria-label="Discord"
+                      target="_blank"
+                    >
+                      <FaDiscord size={30} className="fill-[#46668e]" />
+                    </a>
+                  </li>
+                  <li className="transform hover:-translate-y-1 transition-all duration-300">
+                    <a
+                      href="https://www.tiktok.com/@jesus"
+                      aria-label="TikTok"
+                      target="_blank"
+                      className="transform hover:-translate-y-1 transition-all duration-300"
+                    >
+                      <FaTiktok size={30} className="fill-[#46668e]" />
+                    </a>
+                  </li>
+                  <li className="transform hover:-translate-y-1 transition-all duration-300">
+                    <a
+                      href="https://www.facebook.com/jesus"
+                      aria-label="Facebook"
+                      target="_blank"
+                    >
+                      <FaFacebookF size={30} className="fill-[#46668e]" />
+                    </a>
+                  </li>
+                  <li className="transform hover:-translate-y-1 transition-all duration-300">
+                    <a
+                      href="https://kick.com/jesus"
+                      aria-label="Kick"
+                      target="_blank"
+                    >
+                      <FaKickstarterK size={30} className="fill-[#46668e]" />
+                    </a>
+                  </li>
+                  <li className="transform hover:-translate-y-1 transition-all duration-300">
+                    <a
+                      href="https://www.youtube.com/channel/UCrYCWoIqgrNaQfUWtopoLyg"
+                      aria-label="YouTube"
+                      target="_blank"
+                    >
+                      <FaYoutube size={30} className="fill-[#46668e]" />
+                    </a>
+                  </li>
+                </ul>
+              </Reveal>
+
+              <Reveal delay={0.5}>
+                <div className="max-w-sm  mx-auto">
+                <Newsletter />
+                </div>
+              </Reveal>
             </div>
           </Reveal>
+
           <Reveal delay={0.6}>
-            <div className="w-full flex max-w-lg justify-between items-center  text-lg z-30 pt-10 mx-auto">
-              <div className="w-44 h-14 rounded-md border-2 border-[#6484AB] flex justify-center items-center  backdrop-blur ">
-                <p>MyFaithBuddy</p>
+            <div className=" w-full md:flex md:flex-row max-w-xl justify-between items-start text-lg z-30 pt-4 mx-auto gap-6">
+              <div className="flex pb-3 items-center flex-1">
+                <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center  backdrop-blur divide-y divide-[#6484ab83]">
+                  <p className="p-4">FaithBuddy</p>
+                  <p className="p-4">
+                    Explore faith with our AI chatbot. Integrated Bible for
+                    questions and spiritual growth. A new way to interact.
+                  </p>
+                </div>
               </div>
-              <p className="text-4xl px-10">✞</p>
-              <div className="w-44 h-14 rounded-md border-2 border-[#6484AB] flex justify-center items-center  backdrop-blur ">
-                <p>Blog</p>
+              <div className="md:flex pb-3 items-center hidden flex-1">
+                <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center  backdrop-blur divide-y divide-[#6484ab83]">
+                  <p className="p-4">Blog</p>
+                  <p className="p-2">
+                    Curated Christian goods for your life. Shop to express
+                    faith, support charity. Feel good inside and out.
+                  </p>
+                </div>
+              </div>
+              <div className="flex pb-3 items-center flex-1">
+                <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center  backdrop-blur divide-y divide-[#6484ab83]">
+                  <p className="p-4">Store</p>
+                  <p className="p-4">
+                    Nourish your spirit through articles. Subscribe to weekly
+                    newsletters for Christian insights. Grow your faith.
+                  </p>
+                </div>
               </div>
             </div>
           </Reveal>

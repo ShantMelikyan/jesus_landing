@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div
-      className={`fixed flex justify-between md:justify-evenly backdrop-filter text-[#2c3047] items-center p-6 h-28 w-full z-[100] border-b border-transparent duration-300 ease-in
+      className={`fixed flex justify-between md:justify-evenly backdrop-filter text-[#2c3047] items-center h-20 md:h-28 w-full z-[100] border-b border-transparent duration-300 ease-in
       ${
         navbg && !isOpen
           ? " border-white/25  backdrop-blur-md"
@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
       }`}
     >
       <Link href="/" className="shrink-0 md:hidden">
-        <Image src={logo} alt="logo" height={100} quality={100} />
+        <Image src={logo} alt="logo" height={90} quality={90} />
       </Link>
 
       {/* Now use the isActive function to apply styles accordingly */}
@@ -117,7 +117,7 @@ const Navbar: React.FC = () => {
         <Hamburger
           size={25}
           label="Show menu"
-          color="white"
+          color="#2c3047"
           onToggle={() => setIsOpen(!isOpen)}
           toggled={isOpen}
         />
