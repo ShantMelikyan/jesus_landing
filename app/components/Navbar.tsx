@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import logo from "../../public/logojdark.png";
+import logo from "../../public/jesus-transparent-blue.png";
 import Image from "next/image";
 import Link from "next/link";
 import { Fade as Hamburger } from "hamburger-react";
@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
           store
         </Link>
         <Link href="/" className="shrink-0 ">
-          <Image src={logo} alt="logo" height={100} quality={100} />
+          <Image src={logo} alt="logo" height={150} quality={100} />
         </Link>
 
         <Link

@@ -49,8 +49,7 @@ export default function MultiLayerParallax() {
               <Image
                 src={logo}
                 alt="logo"
-               
-                width={350}
+                width={450}
                 className="h-28  mx-auto object-cover opacity-90 "
               ></Image>
               <Reveal delay={0.3}>
@@ -120,7 +119,7 @@ export default function MultiLayerParallax() {
 
               <Reveal delay={0.5}>
                 <div className="max-w-[20rem] md:max-w-sm  mx-auto pb-2">
-                <Newsletter />
+                  <Newsletter />
                 </div>
               </Reveal>
             </div>
@@ -141,8 +140,8 @@ export default function MultiLayerParallax() {
                 <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center  backdrop-blur divide-y divide-[#6484ab83]">
                   <p className="p-4">Blog</p>
                   <p className="p-2">
-                    Curated Christian goods for your life. Shop to express
-                    faith, support charity. Feel good inside and out.
+                    Nourish your spirit through articles. Subscribe to weekly
+                    newsletters for Christian insights. Grow your faith.
                   </p>
                 </div>
               </div>
@@ -150,8 +149,8 @@ export default function MultiLayerParallax() {
                 <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center  backdrop-blur divide-y divide-[#6484ab83]">
                   <p className="p-4">Store</p>
                   <p className="p-4">
-                    Nourish your spirit through articles. Subscribe to weekly
-                    newsletters for Christian insights. Grow your faith.
+                    Curated Christian goods for your life. Shop to express
+                    faith, support charity. Feel good inside and out.
                   </p>
                 </div>
               </div>

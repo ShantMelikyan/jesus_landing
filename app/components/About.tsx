@@ -4,6 +4,8 @@ import jesus from "../../public/logojesuslight.png";
 import jesusLanding from "../../public/landing-about.png";
 import { FaDiscord } from "react-icons/fa";
 import Link from "next/link";
+import Socials from "./Socials";
+import discord from "@/public/discord2.png";
 
 const About = () => {
   return (
@@ -42,7 +44,35 @@ const About = () => {
         src={jesus}
         alt="jesus"
       ></Image>
-
+      <Socials />
+      <div className="w-full mx-auto md:flex items-center  justify-center">
+        <Image src={discord} width={700} height={500} alt="My SVG" />
+        <div>
+          <h3 className="font-semibold text-2xl pb-4">
+            Join our Discord Comminity
+          </h3>
+          <p className="max-w-sm pb-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+            commodi incidunt vitae voluptate id, illum ex eaque pariatur
+            veritatis doloribus, eos magnam modi! Aut dolor exercitationem fugit
+            molestiae adipisci nostrum?
+          </p>
+          <div className="flex items-center">
+            <a
+              className="text-white rounded-md bg-[#4e5173] py-4 px-8 text-md hover:bg-[#907d93]"
+              href="https://discord.gg/jesus"
+              aria-label="Discord"
+              target="_blank"
+            >
+              Join
+            </a>
+            <div className="pl-4">
+              <p className="text-lg font-semibold">+8500 users</p>
+              <p className="text-base pb-2">Ask, Discuss and Learn</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="w-full mx-auto p-6 max-w-2xl z-30">
         <p className="py-2">
           On our Instagram account, we have been sharing inspiring stories,
@@ -66,7 +96,14 @@ const About = () => {
         </p>
       </div>
 
-      <div className="flex  items-center justify-center ">
+      <div className="flex min-h-full flex-col items-center justify-center">
+        <h1 className="text-3xl font-semibold tracking-wider">
+          Join Our Discord
+        </h1>
+        <p className="text-lg font-semibold">+8500 users</p>
+        <p className="text-base pb-2">Ask, Discuss and Learn</p>
+      </div>
+      {/* <div className="flex  items-center justify-center ">
         <div className="group md:h-[600px] h-96 w-60 [perspective:1000px] ">
           <div className="relative h-full w-full rounded-full shadow-sm border border-white transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
             <div className="flex justify-center absolute inset-0 items-center">
@@ -98,7 +135,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

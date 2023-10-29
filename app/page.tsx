@@ -2,6 +2,7 @@ import Image from "next/image";
 import Newsletter from "./components/Newsletter";
 import landing from "../public/landing2.png";
 import MultiLayerParallax from "./components/MultiLayerParallax";
+import discord from "@/public/discord2.png";
 
 export default function Home() {
   return (
@@ -31,6 +32,34 @@ export default function Home() {
             products — we strive to be your go-to platform for all things
             faith-based.
           </p>
+        </div>
+        <div className="w-full mx-auto lg:flex items-center  justify-center">
+          <Image src={discord} width={700} height={500} alt="My SVG" className="mx-auto flex-1 ml-40" />
+          <div className="px-6 flex-1">
+            <h3 className="font-semibold text-4xl pb-4 lg:text-start text-center">
+              Join our Discord Comminity
+            </h3>
+            <p className="max-w-sm pb-4 mx-auto lg:mx-0 lg:text-start text-center text-lg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+              commodi incidunt vitae voluptate id, illum ex eaque pariatur
+              veritatis doloribus, eos magnam modi! Aut dolor exercitationem
+              fugit molestiae adipisci nostrum?
+            </p>
+            <div className="flex items-center lg:justify-start justify-center">
+              <a
+                className="text-white rounded-md bg-[#4e5173] py-4 px-8 text-md hover:bg-[#907d93]"
+                href="https://discord.gg/jesus"
+                aria-label="Discord"
+                target="_blank"
+              >
+                Join
+              </a>
+              <div className="pl-4">
+                <p className="text-lg font-semibold">+8500 users</p>
+                <p className="text-base pb-2">Ask, Discuss and Learn</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="lg:flex items-center justify-center gap-12 p-8 max-w-6xl mx-auto">
           <div className="flex-1 max-w-2xl mx-auto shadow-lg hover:shadow-2xl hover:shadow-[#907d9378] shadow-[#907d9378] py-14 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] p-4 mb-10 lg:mb-0 transform hover:-translate-y-2 transition-all duration-300">
