@@ -33,8 +33,8 @@ export default function Home() {
             faith-based.
           </p>
         </div>
-        <div className="w-full mx-auto lg:flex items-center  justify-center">
-          <Image src={discord} width={700} height={500} alt="My SVG" className="mx-auto flex-1 ml-40" />
+        <div className="w-full mx-auto lg:flex items-center justify-center">
+          <Image src={discord} width={700} height={500} alt="My SVG" className="mx-auto flex-1 xl:ml-40 " />
           <div className="px-6 flex-1">
             <h3 className="font-semibold text-4xl pb-4 lg:text-start text-center">
               Join our Discord Comminity
@@ -45,7 +45,7 @@ export default function Home() {
               veritatis doloribus, eos magnam modi! Aut dolor exercitationem
               fugit molestiae adipisci nostrum?
             </p>
-            <div className="flex items-center lg:justify-start justify-center">
+            <div className="flex lg:justify-start justify-center">
               <a
                 className="text-white rounded-md bg-[#4e5173] py-4 px-8 text-md hover:bg-[#907d93]"
                 href="https://discord.gg/jesus"
@@ -54,7 +54,7 @@ export default function Home() {
               >
                 Join
               </a>
-              <div className="pl-4">
+              <div className="pl-4 flex items-start flex-col">
                 <p className="text-lg font-semibold">+8500 users</p>
                 <p className="text-base pb-2">Ask, Discuss and Learn</p>
               </div>
