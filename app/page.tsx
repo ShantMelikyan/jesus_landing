@@ -57,7 +57,7 @@ export default function Home() {
                   Community Building
                 </h3>
                 <p className="max-w-md text-lg mb-6 mx-auto">
-                  Beyond personal faith exploration, we're fostering a vibrant
+                  Beyond personal faith exploration, we&apos;re fostering a vibrant
                   community of believers. Our online marketplace not only offers
                   uniquely Christian-themed products but also contributes to
                   charitable causes, embodying the spirit of giving back.
@@ -165,8 +165,8 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="p-6 bg-gradient-to-b from-[#907d93] to-[#e6b8ae] shadow rounded-md">
                 <p className=" italic">
-                  "I've found a supportive community here that has helped me
-                  grow in faith."
+                &quot;I&apos;ve found a supportive community here that has helped me
+                  grow in faith.&quot;
                 </p>
                 <div className="mt-4 flex items-center">
                   <Image
@@ -182,8 +182,8 @@ export default function Home() {
               </div>
               <div className="p-6 bg-gradient-to-b from-[#907d93] to-[#e6b8ae] shadow rounded-md">
                 <p className=" italic">
-                  "I've found a supportive community here that has helped me
-                  grow in faith."
+                &quot;I&apos;ve found a supportive community here that has helped me
+                  grow in faith.&quot;
                 </p>
                 <div className="mt-4 flex items-center">
                   <Image
@@ -199,8 +199,8 @@ export default function Home() {
               </div>
               <div className="p-6 bg-gradient-to-b from-[#907d93] to-[#e6b8ae] shadow rounded-md">
                 <p className=" italic">
-                  "I've found a supportive community here that has helped me
-                  grow in faith."
+                &quot;I&apos;ve found a supportive community here that has helped me
+                  grow in faith.&quot;
                 </p>
                 <div className="mt-4 flex items-center">
                   <Image

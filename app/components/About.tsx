@@ -45,6 +45,7 @@ const About = () => {
           height={500}
           alt="My SVG"
           className="mx-auto flex-1 xl:ml-40 "
+          quality={100}
         />
         <div className="px-6 flex-1">
           <h3 className="font-semibold text-4xl pb-4 lg:text-start text-cente tracking-wide">
