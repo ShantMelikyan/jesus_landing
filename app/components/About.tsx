@@ -12,7 +12,7 @@ const About = () => {
     <div className="h-full w-full bg-gradient-to-b from-[#53577a] via-[#907d93] to-[#e6b8ae] text-[#2c3047]">
       <div className="h-screen items-center w-full  flex flex-col md:flex-row justify-center gap-8 pt-[130px] lg:pt-0">
         <div className="flex-1  max-w-xl  px-5 flex flex-col justify-end">
-          <h1 className="lg:text-6xl text-4xl  bg-gradient-to-r from-[#2c3047]  to-[#655672] text-transparent bg-clip-text">
+          <h1 className="lg:text-6xl text-4xl  bg-gradient-to-r from-[#2c3047]  to-[#5a4d65] text-transparent bg-clip-text">
             Just a few things to know <strong>about us</strong>
           </h1>
           <h2 className="text-xl md:py-4 py-6">
@@ -27,11 +27,9 @@ const About = () => {
         </div>
         <div className="w-11/12 md:max-w-lg md:min-w-0 flex flex-1 items-center justify-center  gap-6  p-4 ">
           <div className="flex flex-1 flex-col justify-center text-center items-center rounded-full border border-white bg-white/20  lg:h-[500px] h-96 bg-[url('/landing2.png')]">
-            {/* <h3>+8500 users</h3> */}
             <h3>Discord</h3>
           </div>
           <div className="flex flex-1 flex-col justify-center text-center items-center rounded-full border border-white bg-white/20   lg:h-[500px] h-96 bg-[url('/landing-about.png')]">
-            {/* <h3>+1 000 000 users</h3> */}
             <h3>Instagram</h3>
           </div>
           <div className="flex flex-1 flex-col justify-center text-center items-center rounded-full border border-white bg-white/20  lg:h-[500px] h-96 bg-[url('/about-img.png')]">
@@ -39,25 +37,26 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Image
-        className="mx-auto w-[1200px] h-[500px] overflow-visible object-center object-cover opacity-70 pb-20"
-        src={jesus}
-        alt="jesus"
-      ></Image>
-      <Socials />
-      <div className="w-full mx-auto md:flex items-center  justify-center">
-        <Image src={discord} width={700} height={500} alt="My SVG" />
-        <div>
-          <h3 className="font-semibold text-2xl pb-4">
+
+      <div className="w-full mx-auto lg:flex items-center justify-center">
+        <Image
+          src={discord}
+          width={700}
+          height={500}
+          alt="My SVG"
+          className="mx-auto flex-1 xl:ml-40 "
+        />
+        <div className="px-6 flex-1">
+          <h3 className="font-semibold text-4xl pb-4 lg:text-start text-cente tracking-wide">
             Join our Discord Comminity
           </h3>
-          <p className="max-w-sm pb-4">
+          <p className="max-w-sm pb-4 mx-auto lg:mx-0 lg:text-start text-center text-lg">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
             commodi incidunt vitae voluptate id, illum ex eaque pariatur
             veritatis doloribus, eos magnam modi! Aut dolor exercitationem fugit
             molestiae adipisci nostrum?
           </p>
-          <div className="flex items-center">
+          <div className="flex lg:justify-start justify-center">
             <a
               className="text-white rounded-md bg-[#4e5173] py-4 px-8 text-md hover:bg-[#907d93]"
               href="https://discord.gg/jesus"
@@ -66,8 +65,8 @@ const About = () => {
             >
               Join
             </a>
-            <div className="pl-4">
-              <p className="text-lg font-semibold">+8500 users</p>
+            <div className="pl-4 flex items-start flex-col">
+              <p className="text-lg font-semibold tracking-wide">+8500 users</p>
               <p className="text-base pb-2">Ask, Discuss and Learn</p>
             </div>
           </div>
@@ -95,14 +94,8 @@ const About = () => {
           another along the way.
         </p>
       </div>
+      <Socials />
 
-      <div className="flex min-h-full flex-col items-center justify-center">
-        <h1 className="text-3xl font-semibold tracking-wider">
-          Join Our Discord
-        </h1>
-        <p className="text-lg font-semibold">+8500 users</p>
-        <p className="text-base pb-2">Ask, Discuss and Learn</p>
-      </div>
       {/* <div className="flex  items-center justify-center ">
         <div className="group md:h-[600px] h-96 w-60 [perspective:1000px] ">
           <div className="relative h-full w-full rounded-full shadow-sm border border-white transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">

@@ -30,15 +30,15 @@ export default function MultiLayerParallax() {
 
   const second = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
   const third = useTransform(scrollYProgress, [0, 1], ["0%", "-35%"]);
-  const bottom = useTransform(scrollYProgress, [0, 1], ["-34%", "-90%"]);
+  const bottom = useTransform(scrollYProgress, [0, 1], ["-34%", "-85%"]);
 
   const subscribeBox = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
 
   return (
-    <div className="h-full w-full relative will-change-transform">
+    <div className="h-full w-full will-change-transform text-[#2c3047] ">
       <div
         ref={ref}
-        className="w-full h-full overflow-hidden relative flex items-center flex-col justify-center px-6"
+        className="w-full h-full  relative flex items-center flex-col justify-center px-6"
       >
         <motion.div
           style={{ y: subscribeBox }}
@@ -192,23 +192,23 @@ export default function MultiLayerParallax() {
             sizes="100vw"
           />
         </motion.div>
+        <motion.div
+          className="md:h-full w-full h-[60%] z-30 absolute top-[100%] overflow-visible"
+          style={{
+            y: bottom,
+          }}
+        >
+          <Image
+            src={bottom_layer}
+            priority={true}
+            alt="landing"
+            quality={100}
+            className="object-cover object-left lg:object-center  h-full w-full bottom-0 "
+            placeholder="blur"
+            sizes="100vw"
+          ></Image>
+        </motion.div>
       </div>
-      <motion.div
-        className="md:h-full w-full h-2/4 z-30 absolute overflow-visible"
-        style={{
-          y: bottom,
-        }}
-      >
-        <Image
-          src={bottom_layer}
-          priority={true}
-          alt="landing"
-          quality={100}
-          className="object-cover object-left lg:object-center  h-full w-full "
-          placeholder="blur"
-          sizes="100vw"
-        ></Image>
-      </motion.div>
     </div>
   );
 }

@@ -96,7 +96,7 @@ const Footer = () => {
           </li>
           <li>
             <Link href="/" className="shrink-0 ">
-              <Image src={logo} alt="logo" height={100} quality={100} />
+              <Image src={logo} alt="logo" height={80} quality={100} />
             </Link>
           </li>
           <li className="transform hover:-translate-y-1 transition-all duration-300">

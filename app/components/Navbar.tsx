@@ -125,7 +125,7 @@ const Navbar: React.FC = () => {
       <div
         className={`${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } fixed top-0 right-0 w-1/2 h-full text-lg uppercase text-center pt-28 md:hidden z-[90]  duration-500 border-l border-white/20 backdrop-filter  backdrop-blur-md`}
+        } fixed top-0 right-0 w-full h-full text-lg uppercase text-center pt-28 md:hidden z-[90]  duration-500 border-l border-white/20 backdrop-filter  backdrop-blur-lg`}
       >
         <nav className=" flex flex-col gap-6 w-full [&>*]:p-4 items-center tracking-[0.2em] text-[#2c3047]">
           <Link
