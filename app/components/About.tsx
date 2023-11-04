@@ -13,16 +13,13 @@ const About = () => {
       <div className="h-screen items-center w-full  flex flex-col md:flex-row justify-center gap-8 pt-[130px] lg:pt-0">
         <div className="flex-1  max-w-xl  px-5 flex flex-col justify-end">
           <h1 className="lg:text-6xl text-4xl  bg-gradient-to-r from-[#2c3047]  to-[#5a4d65] text-transparent bg-clip-text">
-            Just a few things to know <strong>about us</strong>
+          Discover Our Journey of <strong>Faith and Purpose</strong>
           </h1>
           <h2 className="text-xl md:py-4 py-6">
-            Discover who we are, our mission, and how we&#39;re making a
-            difference.
+          Get to know our community, our vision, and the impact we&lsquo;ve been making in the world of Christianity.
           </h2>
-          <h2 className="md:max-w-lg max-w-sm">
-            We are a dedicated group of individuals committed to fostering a
-            vibrant and inclusive community centered on the teachings of
-            Christianity and the life of Jesus Christ for the past 5 years.
+          <h2 className="md:max-w-lg max-w-sm text-lg">
+           <strong>Celebrating 5 Years of Spiritual Journey:</strong> For half a decade, we have been a beacon of hope, love, and faith, anchoring our values deeply in the teachings of Jesus Christ.
           </h2>
         </div>
         <div className="w-11/12 md:max-w-lg md:min-w-0 flex flex-1 items-center justify-center  gap-6  p-4 ">
@@ -52,10 +49,7 @@ const About = () => {
             Join our Discord Comminity
           </h3>
           <p className="max-w-sm pb-4 mx-auto lg:mx-0 lg:text-start text-center text-lg">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
-            commodi incidunt vitae voluptate id, illum ex eaque pariatur
-            veritatis doloribus, eos magnam modi! Aut dolor exercitationem fugit
-            molestiae adipisci nostrum?
+          Connect with Our Vibrant Community: Engage with over 9,500 members who are passionate about their faith, and eager to learn, discuss, and grow together. Join our thriving community, engage in deep discussions, prayer sessions, and fellowship. Dive into the heart of our mission.
           </p>
           <div className="flex lg:justify-start justify-center">
             <a
@@ -67,13 +61,13 @@ const About = () => {
               Join
             </a>
             <div className="pl-4 flex items-start flex-col">
-              <p className="text-lg font-semibold tracking-wide">+8500 users</p>
+              <p className="text-lg font-semibold tracking-wide">+9500 users</p>
               <p className="text-base pb-2">Ask, Discuss and Learn</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full mx-auto p-6 max-w-2xl z-30">
+      <div className="w-full mx-auto p-6 max-w-2xl z-30 text-lg">
         <p className="py-2">
           On our Instagram account, we have been sharing inspiring stories,
           messages of hope, and promoting positivity in the world.

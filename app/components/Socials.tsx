@@ -11,8 +11,8 @@ import {
 const Socials = () => {
   return (
     <div className="p-4 md:p-8 w-full">
-        <h3 className="text-center text-5xl pb-6">Find us on</h3>
-      <ul className="list-none flex justify-evenly py-10 md:gap-8 gap-2 border-white/25 border rounded-2xl bg-white/20 px-4">
+        <h3 className="text-center text-3xl pb-6">Join Us in Our Mission</h3>
+      <ul className="list-none flex justify-center py-10 sm:gap-14 gap-2 px-4">
         <li className="transform hover:-translate-y-1 transition-all duration-300">
           <a
             href="https://www.instagram.com/jesus/"

@@ -70,7 +70,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className="w-full mx-auto lg:flex items-center justify-center py-20">
+        <section id="about" className="w-full mx-auto lg:flex items-center justify-center py-20">
           <Image
             src={discord}
             width={700}
