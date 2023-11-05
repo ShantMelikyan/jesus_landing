@@ -10,8 +10,8 @@ import {
 
 const Socials = () => {
   return (
-    <div className="p-4 md:p-8 w-full">
-        <h3 className="text-center text-3xl pb-6">Join Us in Our Mission</h3>
+    <div className="p-4 md:p-8 w-full text-white">
+        <h3 className="text-center text-3xl pb-6">Join Us On Our Mission</h3>
       <ul className="list-none flex justify-center py-10 sm:gap-14 gap-2 px-4">
         <li className="transform hover:-translate-y-1 transition-all duration-300">
           <a
@@ -20,7 +20,7 @@ const Socials = () => {
             target="_blank"
             className="flex flex-col justify-center items-center gap-3"
           >
-            <FaInstagram size={35} className="fill-[#404664]" />{" "}
+            <FaInstagram size={35} className="fill-white" />{" "}
             <p>Instagram</p>
           </a>
         </li>
@@ -31,7 +31,7 @@ const Socials = () => {
             target="_blank"
             className="flex flex-col justify-center items-center gap-3"
           >
-            <FaDiscord size={35} className="fill-[#404664]" /> <p>Discord</p>
+            <FaDiscord size={35} className="fill-white" /> <p>Discord</p>
           </a>
         </li>
         <li className="transform hover:-translate-y-1 transition-all duration-300">
@@ -41,7 +41,7 @@ const Socials = () => {
             target="_blank"
             className="flex flex-col justify-center items-center gap-3"
           >
-            <FaTiktok size={35} className="fill-[#404664]" /> <p>TikTok</p>
+            <FaTiktok size={35} className="fill-white" /> <p>TikTok</p>
           </a>
         </li>
         <li className="transform hover:-translate-y-1 transition-all duration-300">
@@ -51,7 +51,7 @@ const Socials = () => {
             target="_blank"
             className="flex flex-col justify-center items-center gap-3"
           >
-            <FaFacebookF size={35} className="fill-[#404664]" /> <p>Facebook</p>
+            <FaFacebookF size={35} className="fill-white" /> <p>Facebook</p>
           </a>
         </li>
         <li className="transform hover:-translate-y-1 transition-all duration-300">
@@ -61,7 +61,7 @@ const Socials = () => {
             target="_blank"
             className="flex flex-col justify-center items-center gap-3"
           >
-            <FaKickstarterK size={35} className="fill-[#404664]" /> <p>Kick</p>
+            <FaKickstarterK size={35} className="fill-white" /> <p>Kick</p>
           </a>
         </li>
         <li className="transform hover:-translate-y-1 transition-all duration-300">
@@ -71,7 +71,7 @@ const Socials = () => {
             target="_blank"
             className="flex flex-col justify-center items-center gap-3"
           >
-            <FaYoutube size={35} className="fill-[#404664]" /> <p>YouTube</p>
+            <FaYoutube size={35} className="fill-white" /> <p>YouTube</p>
           </a>
         </li>
       </ul>

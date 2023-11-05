@@ -65,7 +65,7 @@ const Footer = () => {
         <div className="px-10 w-full max-w-2xl md:px-10 mx-auto">
           <Newsletter />
         </div>
-        <ul className="list-none flex justify-center py-10 md:gap-8 gap-6 items-center">
+        <ul className="list-none flex justify-center py-10 md:gap-8 gap-4 items-center">
           <li className="transform hover:-translate-y-1 transition-all duration-300">
             <a
               href="https://www.instagram.com/jesus/"

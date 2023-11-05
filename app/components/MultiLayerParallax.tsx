@@ -32,20 +32,20 @@ export default function MultiLayerParallax() {
   const third = useTransform(scrollYProgress, [0, 1], ["0%", "-35%"]);
   const bottom = useTransform(scrollYProgress, [0, 1], ["-34%", "-85%"]);
 
-  const subscribeBox = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
+  const subscribeBox = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
 
   return (
     <div className="h-full w-full will-change-transform text-[#2c3047] ">
       <div
         ref={ref}
-        className="w-full h-full  relative flex items-center flex-col justify-center px-6"
+        className="w-full h-full  relative flex items-center flex-col justify-start px-6"
       >
         <motion.div
           style={{ y: subscribeBox }}
-          className=" z-30 w-full max-w-xl text-[#37394b] flex flex-col justify-center"
+          className=" z-30 w-full max-w-2xl text-[#37394b] flex flex-col justify-center pt-28"
         >
           <Reveal>
-            <div className="shadow-lg w-full  max-w-xl mx-auto flex justify-center flex-col p-2 md:p-6 rounded-2xl  backdrop-blur-sm">
+            <div className="shadow-lg w-full  max-w-2xl mx-auto flex justify-center flex-col p-2 md:p-6 rounded-2xl  backdrop-blur-sm">
               <Image
                 src={logo}
                 alt="logo"
@@ -65,7 +65,7 @@ export default function MultiLayerParallax() {
                       aria-label="Instagram"
                       target="_blank"
                     >
-                      <FaInstagram size={30} className="fill-[#46668e]" />
+                      <FaInstagram size={30} className="fill-[#4e5173]" />
                     </a>
                   </li>
                   <li className="transform hover:-translate-y-1 transition-all duration-300">
@@ -74,7 +74,7 @@ export default function MultiLayerParallax() {
                       aria-label="Discord"
                       target="_blank"
                     >
-                      <FaDiscord size={30} className="fill-[#46668e]" />
+                      <FaDiscord size={30} className="fill-[#4e5173]" />
                     </a>
                   </li>
                   <li className="transform hover:-translate-y-1 transition-all duration-300">
@@ -84,7 +84,7 @@ export default function MultiLayerParallax() {
                       target="_blank"
                       className="transform hover:-translate-y-1 transition-all duration-300"
                     >
-                      <FaTiktok size={30} className="fill-[#46668e]" />
+                      <FaTiktok size={30} className="fill-[#4e5173]" />
                     </a>
                   </li>
                   <li className="transform hover:-translate-y-1 transition-all duration-300">
@@ -93,7 +93,7 @@ export default function MultiLayerParallax() {
                       aria-label="Facebook"
                       target="_blank"
                     >
-                      <FaFacebookF size={30} className="fill-[#46668e]" />
+                      <FaFacebookF size={30} className="fill-[#4e5173]" />
                     </a>
                   </li>
                   <li className="transform hover:-translate-y-1 transition-all duration-300">
@@ -102,7 +102,7 @@ export default function MultiLayerParallax() {
                       aria-label="Kick"
                       target="_blank"
                     >
-                      <FaKickstarterK size={30} className="fill-[#46668e]" />
+                      <FaKickstarterK size={30} className="fill-[#4e5173]" />
                     </a>
                   </li>
                   <li className="transform hover:-translate-y-1 transition-all duration-300">
@@ -111,7 +111,7 @@ export default function MultiLayerParallax() {
                       aria-label="YouTube"
                       target="_blank"
                     >
-                      <FaYoutube size={30} className="fill-[#46668e]" />
+                      <FaYoutube size={30} className="fill-[#4e5173]" />
                     </a>
                   </li>
                 </ul>
@@ -126,31 +126,34 @@ export default function MultiLayerParallax() {
           </Reveal>
 
           <Reveal delay={0.6}>
-            <div className=" w-full md:flex md:flex-row max-w-xl justify-between items-start text-lg z-30 pt-4 mx-auto gap-6 ">
+            <div className=" w-full md:flex md:flex-row max-w-2xl justify-between items-start text-lg z-30 pt-4 mx-auto gap-6 ">
               <div className="flex pb-3 items-center flex-1">
                 <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center  backdrop-blur divide-y divide-[#6484ab83]">
-                  <p className="p-4">FaithBuddy</p>
-                  <p className="p-4">
-                    Explore faith with our AI chatbot. Integrated Bible for
-                    questions and spiritual growth. A new way to interact.
+                  <p className="p-4 text-xl">Store</p>
+                  <p className="p-2">
+                    Christianity is a journey worth celebrating. We've curated a
+                    collection of quality merchandise that adds a touch of
+                    inspiration to your daily life.
                   </p>
                 </div>
               </div>
-              <div className="md:flex pb-3 items-center hidden flex-1">
+              <div className="md:flex pb-3 items-center  flex-1">
                 <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center  backdrop-blur divide-y divide-[#6484ab83]">
-                  <p className="p-4">Blog</p>
+                  <p className="p-4 text-xl">FaithBuddy</p>
                   <p className="p-2">
-                    Nourish your spirit through articles. Subscribe to weekly
-                    newsletters for Christian insights. Grow your faith.
+                    Explore Christianity with our AI Chatbot, FaithBuddy, with
+                    an Integrated Bible. Designed to bring you closer to God on
+                    your spiritual journey of faith.
                   </p>
                 </div>
               </div>
               <div className="flex pb-3 items-center flex-1 z-[100]">
                 <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center  backdrop-blur divide-y divide-[#6484ab83]">
-                  <p className="p-4">Store</p>
-                  <p className="p-4">
-                    Curated Christian goods for your life. Shop to express
-                    faith, support charity. Feel good inside and out.
+                  <p className="p-4 text-xl">Blog</p>
+                  <p className="p-2">
+                    Discover articles of wisdom on our blog. Whether you're
+                    seeking spiritual guidance, insightful stories, or practical
+                    advice for your faith journey, we've got you covered.
                   </p>
                 </div>
               </div>
