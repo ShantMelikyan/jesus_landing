@@ -131,7 +131,7 @@ export default function MultiLayerParallax() {
                 <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center  backdrop-blur divide-y divide-[#6484ab83]">
                   <p className="p-4 text-xl">Store</p>
                   <p className="p-2">
-                    Christianity is a journey worth celebrating. We've curated a
+                    Christianity is a journey worth celebrating. We&apos;ve curated a
                     collection of quality merchandise that adds a touch of
                     inspiration to your daily life.
                   </p>
@@ -151,9 +151,9 @@ export default function MultiLayerParallax() {
                 <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center  backdrop-blur divide-y divide-[#6484ab83]">
                   <p className="p-4 text-xl">Blog</p>
                   <p className="p-2">
-                    Discover articles of wisdom on our blog. Whether you're
+                    Discover articles of wisdom on our blog. Whether you&apos;re
                     seeking spiritual guidance, insightful stories, or practical
-                    advice for your faith journey, we've got you covered.
+                    advice for your faith journey, we&apos;ve got you covered.
                   </p>
                 </div>
               </div>

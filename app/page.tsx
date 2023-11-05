@@ -196,7 +196,7 @@ export default function Home() {
                   The moderators interact with the chat peacefully, if there is
                   a discussion it&apos;s mostly civil. And we have Bible study.
                   And if any debates were to break out in the chats it is
-                  diverted, there's just so much respect it&apos;s so
+                  diverted, there&apos;s just so much respect it&apos;s so
                   amazing&quot;
                 </p>
                 <div className="mt-4 flex items-center text-start">
