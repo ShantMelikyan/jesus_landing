@@ -105,7 +105,7 @@ const About = () => {
         <Socials />
         <h3 className="text-center text-3xl py-10">Our Values</h3>
 
-        <div className="w-full grid place-items-center grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:px-20">
+        <div className="w-full grid place-items-center grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 xl:px-20">
           {/* faith  */}
           <div className="flex flex-col  relative gap-4 order-1 pr-14 md:pr-0 py-10">
             <Image
