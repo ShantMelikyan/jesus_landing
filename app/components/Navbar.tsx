@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
       className={`fixed flex justify-between md:justify-evenly backdrop-filter text-[#2c3047] items-center h-20 md:h-28 w-full z-[100] border-b border-transparent duration-300 ease-in
       ${
         navbg && !isOpen
-          ? " border-white/25  backdrop-blur-md"
+          ? " border-white/25  backdrop-blur-md "
           : "bg-transparent"
       }`}
     >
@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
       </Link>
 
       {/* Now use the isActive function to apply styles accordingly */}
-      <nav className="md:flex text-lg hidden uppercase tracking-[0.2em] items-center">
+      <nav className="md:flex text-lg hidden uppercase tracking-[0.2em] items-center gap-6">
         {/* <Link
           href="/"
           className={`px-6 py-2 shadow-sm transition-colors duration-500 ${
@@ -58,26 +58,26 @@ const Navbar: React.FC = () => {
         <Link
           aria-label="About"
           href="/about"
-          className={`px-6 py-2 transition-colors duration-500 h-10  ${
+          className={`px-6 py-2 transition-colors duration-500 h-10 rounded-lg ${
             isActive("/about")
               ? navbg
-                ? "text-red-300"
+                ? "text-[#ca3f3f]"
                 : "shadow-white"
               : "border-transparent"
-          }`}
+          } ${navbg && !isOpen ? "bg-white/60" : "bg-transparent"}`}
         >
           about
         </Link>
         <Link
           aria-label="Store"
           href="/store"
-          className={`px-6 py-2 transition-colors duration-500 h-10  ${
+          className={`px-6 py-2 transition-colors duration-500 h-10 rounded-lg ${
             isActive("/store")
               ? navbg
                 ? "text-red-300"
                 : "shadow-white"
               : "border-transparent"
-          }`}
+          } ${navbg && !isOpen ? "bg-white/60" : "bg-transparent"}`}
         >
           store
         </Link>
@@ -86,28 +86,28 @@ const Navbar: React.FC = () => {
         </Link>
 
         <Link
-          aria-label="MyFaithBuddy"
-          href="/MyFaithBuddy"
-          className={`px-6 py-2 transition-colors duration-500 h-10  ${
+          aria-label="myfaithbuddy"
+          href="/myfaithbuddy"
+          className={`px-6 py-2 transition-colors duration-500 h-10 rounded-lg ${
             isActive("/myfaithbuddy")
               ? navbg
                 ? "text-red-300"
                 : "shadow-white"
               : "border-transparent"
-          }`}
+          } ${navbg && !isOpen ? "bg-white/60" : "bg-transparent"}`}
         >
           Buddy
         </Link>
         <Link
           aria-label="Blog"
           href="/blog"
-          className={`px-6 py-2 transition-colors duration-500 h-10  ${
+          className={`px-6 py-2 transition-colors duration-500 h-10 rounded-lg ${
             isActive("/blog")
               ? navbg
                 ? "text-red-300"
                 : "shadow-white"
               : "border-transparent"
-          }`}
+          } ${navbg && !isOpen ? "bg-white/60" : "bg-transparent"}`}
         >
           Blog
         </Link>
