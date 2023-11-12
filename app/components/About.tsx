@@ -123,7 +123,7 @@ const About = () => {
             <p className="w-60">
               Faith in Jesus Christ is our guiding light, offering hope,
               purpose, and the promise of eternal life. With unwavering faith,
-              we find the courage to navigate life's challenges
+              we find the courage to navigate life&apos;s challenges
             </p>
           </div>
           {/* community */}
@@ -186,9 +186,9 @@ const About = () => {
             <h3 className="text-2xl uppercase font-semibold">Forgiveness</h3>
 
             <p className="w-60">
-              Forgiveness is at the heart of our faith. Through Christ's
+              Forgiveness is at the heart of our faith. Through Christ&apos;s
               example, we extend grace, mend relationships, find healing, and
-              experience the profound peace of God's love.
+              experience the profound peace of God&apos;s love.
             </p>
           </div>
 
@@ -208,8 +208,8 @@ const About = () => {
             <h3 className="text-2xl uppercase font-semibold">Love</h3>
 
             <p className="w-60">
-              Love is our foundation. We embrace God's love and share it with
-              one another, finding unity, purpose, and fulfillment in Christ's
+              Love is our foundation. We embrace God&apos;s love and share it with
+              one another, finding unity, purpose, and fulfillment in Christ&apos;s
               commandments.
             </p>
           </div>
@@ -231,7 +231,7 @@ const About = () => {
 
             <p className="w-60">
               Glorifying God is our ultimate purpose. In everything we do, we
-              strive to reflect God's love, goodness, and grace. Through our
+              strive to reflect God&apos;s love, goodness, and grace. Through our
               actions and worship, we honor the Creator and find fulfillment in
               living out His divine plan.
             </p>
