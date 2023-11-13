@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import logo from "../../public/jesus-transparent-blue.png";
+import logo from "../../public/logojlight.png";
 import Image from "next/image";
 import Link from "next/link";
 import { Fade as Hamburger } from "hamburger-react";
@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div
-      className={`fixed flex justify-between md:justify-evenly backdrop-filter text-[#2c3047] items-center h-20 md:h-28 w-full z-[100] border-b border-transparent duration-300 ease-in
+      className={`fixed flex justify-between md:justify-evenly  backdrop-filter text-[#2c3047] items-center h-20 md:h-28 w-full z-[100] border-b border-transparent duration-300 ease-in
       ${
         navbg && !isOpen
           ? " border-white/25  backdrop-blur-md "
@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
                 ? "text-[#ca3f3f]"
                 : "shadow-white"
               : "border-transparent"
-          } ${navbg && !isOpen ? "bg-white/60" : "bg-transparent"}`}
+          } ${navbg && !isOpen ? "bg-white/30" : "bg-transparent"}`}
         >
           about
         </Link>
@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
                 ? "text-red-300"
                 : "shadow-white"
               : "border-transparent"
-          } ${navbg && !isOpen ? "bg-white/60" : "bg-transparent"}`}
+          } ${navbg && !isOpen ? "bg-white/30" : "bg-transparent"}`}
         >
           store
         </Link>
@@ -94,23 +94,23 @@ const Navbar: React.FC = () => {
                 ? "text-red-300"
                 : "shadow-white"
               : "border-transparent"
-          } ${navbg && !isOpen ? "bg-white/60" : "bg-transparent"}`}
+          } ${navbg && !isOpen ? "bg-white/30" : "bg-transparent"}`}
         >
           Buddy
         </Link>
-        <Link
+        <a
           aria-label="Blog"
-          href="/blog"
+          href="https://jesus.beehiiv.com/"
           className={`px-6 py-2 transition-colors duration-500 h-10 rounded-lg ${
             isActive("/blog")
               ? navbg
                 ? "text-red-300"
                 : "shadow-white"
               : "border-transparent"
-          } ${navbg && !isOpen ? "bg-white/60" : "bg-transparent"}`}
+          } ${navbg && !isOpen ? "bg-white/30" : "bg-transparent"}`}
         >
           Blog
-        </Link>
+        </a>
       </nav>
 
       <div className="md:hidden z-[100]">
@@ -161,8 +161,8 @@ const Navbar: React.FC = () => {
           >
             My Faith Buddy
           </Link>
-          <Link
-            href="/blog"
+          <a
+            href="https://jesus.beehiiv.com/"
             onClick={() => setIsOpen(false)}
             className={`w-40 border   rounded-md  p-2 ${
               isActive("/blog")
@@ -171,7 +171,7 @@ const Navbar: React.FC = () => {
             }`}
           >
             Blog
-          </Link>
+          </a>
           <Link
             href="/newsletter"
             onClick={() => setIsOpen(false)}

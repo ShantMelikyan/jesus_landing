@@ -9,7 +9,7 @@ import member2 from "@/public/member-avatars/member2.png";
 export default function Home() {
   return (
     <main className="h-full w-full bg-gradient-to-b from-[#53577a] via-[#907d93] to-[#e6b8ae] text-[#2c3047]">
-      <div className="h-screen flex flex-col items-center justify-center overflow-visible z-20">
+      <div className="md:h-screen flex flex-col items-center justify-center overflow-visible z-20">
         <MultiLayerParallax />
       </div>
       <section className="h-full text-center w-full  pt-32">
@@ -153,7 +153,7 @@ export default function Home() {
               Stay updated with our latest articles and insights.
             </p>
             <a
-              href="/blog-newsletter"
+              href="https://jesus.beehiiv.com/"
               className="p-4 bg-[#4e5173] text-white rounded-md"
             >
               Read Blog

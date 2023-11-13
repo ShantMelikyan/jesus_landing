@@ -41,11 +41,11 @@ export default function MultiLayerParallax() {
         className="w-full h-full  relative flex items-center flex-col justify-start px-6"
       >
         <motion.div
-          style={{ y: subscribeBox }}
+          // style={{ y: subscribeBox }}
           className=" z-30 w-full max-w-2xl text-[#37394b] flex flex-col justify-center pt-28"
         >
           <Reveal>
-            <div className="shadow-lg w-full  max-w-2xl mx-auto flex justify-center flex-col p-2 md:p-6 rounded-2xl  backdrop-blur-sm">
+            <div className="shadow-lg w-full  max-w-2xl mx-auto flex justify-center flex-col p-2 md:p-6 rounded-2xl  bg-slate-100/30 ">
               <Image
                 src={logo}
                 alt="logo"
@@ -128,17 +128,17 @@ export default function MultiLayerParallax() {
           <Reveal delay={0.6}>
             <div className=" w-full md:flex md:flex-row max-w-2xl justify-between items-start text-lg z-30 pt-4 mx-auto gap-6 ">
               <div className="flex pb-3 items-center flex-1">
-                <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center  backdrop-blur divide-y divide-[#6484ab83]">
+                <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center bg-slate-100/30  backdrop-blur divide-y divide-[#6484ab83]">
                   <p className="p-4 text-xl">Store</p>
                   <p className="p-2">
-                    Christianity is a journey worth celebrating. We&apos;ve curated a
-                    collection of quality merchandise that adds a touch of
-                    inspiration to your daily life.
+                    Christianity is a journey worth celebrating. We&apos;ve
+                    curated a collection of quality merchandise that adds a
+                    touch of inspiration to your daily life.
                   </p>
                 </div>
               </div>
               <div className="md:flex pb-3 items-center  flex-1">
-                <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center  backdrop-blur divide-y divide-[#6484ab83]">
+                <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center bg-slate-100/30 backdrop-blur divide-y divide-[#6484ab83]">
                   <p className="p-4 text-xl">FaithBuddy</p>
                   <p className="p-2">
                     Explore Christianity with our AI Chatbot, FaithBuddy, with
@@ -148,11 +148,11 @@ export default function MultiLayerParallax() {
                 </div>
               </div>
               <div className="flex pb-3 items-center flex-1 z-[100]">
-                <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center  backdrop-blur divide-y divide-[#6484ab83]">
+                <div className="text-center shadow-inner rounded-2xl  flex flex-col justify-center items-center bg-slate-100/30 backdrop-blur divide-y divide-[#6484ab83]">
                   <p className="p-4 text-xl">Blog</p>
                   <p className="p-2">
                     Discover articles of wisdom on our blog. Whether you&apos;re
-                    seeking spiritual guidance, insightful stories, or practical
+                    seeking spiritual guidance or practical
                     advice for your faith journey, we&apos;ve got you covered.
                   </p>
                 </div>
@@ -172,7 +172,10 @@ export default function MultiLayerParallax() {
             sizes="100vw"
           ></Image>
         </div>
-        <motion.div className="absolute inset-0 z-10" style={{ y: second }}>
+        <motion.div
+          className="absolute inset-0 z-10 hidden md:block"
+          style={{ y: second }}
+        >
           <Image
             src={second_layer}
             priority={true}
@@ -184,7 +187,10 @@ export default function MultiLayerParallax() {
           ></Image>
         </motion.div>
 
-        <motion.div className="absolute inset-0 z-20 " style={{ y: third }}>
+        <motion.div
+          className="absolute inset-0 z-20 hidden md:block"
+          style={{ y: third }}
+        >
           <Image
             src={third_layer}
             priority={true}
@@ -196,7 +202,7 @@ export default function MultiLayerParallax() {
           />
         </motion.div>
         <motion.div
-          className="md:h-full w-full h-[60%] z-30 absolute top-[100%] overflow-visible"
+          className="md:h-full w-full h-[60%] z-30 absolute top-[100%] overflow-visible hidden md:block"
           style={{
             y: bottom,
           }}

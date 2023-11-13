@@ -105,7 +105,7 @@ const About = () => {
         <Socials />
         <h3 className="text-center text-3xl py-10">Our Values</h3>
 
-        <div className="w-full grid place-items-center grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 xl:px-20">
+        <div className="w-full grid place-items-center grid-cols-1 lg:grid-cols-2 xl:px-20">
           {/* faith  */}
           <div className="flex flex-col  relative gap-4 order-1 pr-14 md:pr-0 py-10">
             <Image
@@ -114,7 +114,9 @@ const About = () => {
               className="absolute trabsform translate-x-44 -translate-y-4"
             />
 
-            <h3 className="text-2xl uppercase font-semibold text-right pr-6">Faith</h3>
+            <h3 className="text-2xl uppercase font-semibold text-right pr-6">
+              Faith
+            </h3>
             <Image
               src={faith}
               alt="faith icon"
@@ -127,14 +129,16 @@ const About = () => {
             </p>
           </div>
           {/* community */}
-          <div className="flex flex-col  relative gap-4 order-6 xl:order-2 pr-14 md:pr-0 py-10 ">
+          <div className="flex flex-col  relative gap-4 order-6 pr-14 md:pr-0 py-10 ">
             <Image
               src={cross}
               alt="cross"
               className="absolute trabsform translate-x-44 -translate-y-4"
             />
 
-            <h3 className="text-2xl uppercase font-semibold text-right pr-6">Community</h3>
+            <h3 className="text-2xl uppercase font-semibold text-right pr-6">
+              Community
+            </h3>
             <Image
               src={community}
               alt="community icon"
@@ -156,7 +160,9 @@ const About = () => {
               className="absolute trabsform translate-x-44 -translate-y-4"
             />
 
-            <h3 className="text-2xl uppercase font-semibold text-right pr-6">Truth</h3>
+            <h3 className="text-2xl uppercase font-semibold text-right pr-6">
+              Truth
+            </h3>
             <Image
               src={truth}
               alt="truth icon"
@@ -171,7 +177,7 @@ const About = () => {
           </div>
 
           {/* forgiveness */}
-          <div className="flex flex-col relative gap-4 order-2 xl:order-4 pl-14 md:pl-0 py-10 ">
+          <div className="flex flex-col relative gap-4 order-2  pl-14 md:pl-0 py-10 ">
             <Image
               src={cross}
               alt="cross"
@@ -193,7 +199,7 @@ const About = () => {
           </div>
 
           {/* love */}
-          <div className="flex flex-col relative gap-4 order-4  py-10 pl-14 md:pl-0  lg:p-0  lg:pt-6 xl:p-10">
+          <div className="flex flex-col relative gap-4 order-4  py-10 pl-14 md:pl-0  lg:p-0  lg:pt-6 ">
             <Image
               src={cross}
               alt="cross"
@@ -215,7 +221,7 @@ const About = () => {
           </div>
 
           {/* god  */}
-          <div className="flex flex-col relative gap-4 order-6 lg:order-6 py-10 pl-14 md:pl-0 lg:p-0 lg:px-10 lg:pt-[70px]  xl:pt-10">
+          <div className="flex flex-col relative gap-4 order-6 lg:order-6 py-10 pl-14 md:pl-0 lg:p-0 lg:px-10 lg:pt-[70px]  ">
             <Image
               src={cross}
               alt="cross"
