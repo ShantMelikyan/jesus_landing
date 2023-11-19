@@ -131,7 +131,7 @@ export default function Home() {
               Learn More
             </a>
           </div>
-          <div className="flex-1 max-w-2xl mx-auto shadow-lg hover:shadow-2xl hover:shadow-[#907d9378] shadow-[#907d9378] py-20 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] h-96 p-4 mb-10 lg:mb-0 transform hover:-translate-y-2 transition-all duration-300">
+          <div className="flex-1 max-w-2xl mx-auto shadow-lg hover:shadow-2xl hover:shadow-[#907d9378] shadow-[#907d9378] py-14 rounded-2xl bg-gradient-to-b from-[#907d93] to-[#e6b8ae] h-96 p-4 mb-10 lg:mb-0 transform hover:-translate-y-2 transition-all duration-300">
             <h3 className="bg-[#BC9CA1] shadow-inner shadow-[#A18998] rounded-lg py-4 tracking-wider text-xl font-semibold mx-auto max-w-[180px]">
               Store
             </h3>
@@ -150,7 +150,7 @@ export default function Home() {
               Blog
             </h3>
             <p className="py-10 text-lg w-52 mx-auto">
-              Stay updated with our latest articles and insights.
+              Stay updated with our latest articles and insights about Christianity.
             </p>
             <a
               href="https://jesus.beehiiv.com/"

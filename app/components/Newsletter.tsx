@@ -8,6 +8,7 @@ const Newsletter = () => {
             data-test-id="beehiiv-embed"
             height="52"
             width="100%"
+            title="NewsletterFrame"
 
             style={{
               margin: 0,

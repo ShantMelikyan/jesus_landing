@@ -48,12 +48,15 @@ const About = () => {
             <div className="py-6">
               <Newsletter />
             </div>
-            <div className="text-[#757575] bg-white flex justify-between items-center h-14 rounded-md pl-[20px] border-2 border-[#4E5172] backdrop-blur">
+            <Link
+              href="https://discord.gg/jesus"
+              className="text-[#757575] bg-white flex justify-between items-center h-14 rounded-md pl-[20px] border-2 border-[#4E5172] backdrop-blur"
+            >
               <h3>Join our Discord</h3>
               <h3 className="bg-[#4E5172] h-full w-[100px] rounded-r flex items-center justify-center text-white">
                 Join
               </h3>
-            </div>
+            </Link>
           </div>
           <div className="text-white max-w-md p-6  z-30 text-lg rounded-md px-5 border border-[#4E5172] bg-black/30 backdrop-blur">
             <h2 className="text-4xl font-medium">Our Mission</h2>
@@ -105,9 +108,9 @@ const About = () => {
         <Socials />
         <h3 className="text-center text-3xl py-10">Our Values</h3>
 
-        <div className="w-full grid place-items-center grid-cols-1 lg:grid-cols-2 xl:px-20">
+        <div className="w-full grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:px-40 md:gap-x-20 lg:gap-0">
           {/* faith  */}
-          <div className="flex flex-col  relative gap-4 order-1 pr-14 md:pr-0 py-10">
+          <div className="flex flex-col  relative gap-4 order-1 pr-14 md:pr-0 py-10 lg:c">
             <Image
               src={cross}
               alt="cross"
@@ -175,6 +178,11 @@ const About = () => {
               .
             </p>
           </div>
+          <Image
+            src={logo}
+            alt="jesus group logo"
+            className="row-span-3 order-1 w-80 hidden lg:block"
+          />
 
           {/* forgiveness */}
           <div className="flex flex-col relative gap-4 order-2  pl-14 md:pl-0 py-10 ">
@@ -215,13 +223,13 @@ const About = () => {
 
             <p className="w-60">
               Love is our foundation. We embrace God&apos;s love and share it
-              with one another, finding unity, purpose, and fulfillment in
-              Christ&apos;s commandments.
+              with one another, finding unity, purpose, and fulfillment in with
+              Christ&apos;s.
             </p>
           </div>
 
           {/* god  */}
-          <div className="flex flex-col relative gap-4 order-6 lg:order-6 py-10 pl-14 md:pl-0 lg:p-0 lg:px-10 lg:pt-[70px]  ">
+          <div className="flex flex-col relative gap-4 order-6 lg:order-6 py-10 pl-14 md:pl-0 lg:p-0 lg:px-10   ">
             <Image
               src={cross}
               alt="cross"
@@ -237,9 +245,7 @@ const About = () => {
 
             <p className="w-60">
               Glorifying God is our ultimate purpose. In everything we do, we
-              strive to reflect God&apos;s love, goodness, and grace. Through
-              our actions and worship, we honor the Creator and find fulfillment
-              in living out His divine plan.
+              strive to reflect God&apos;s love, goodness, and grace.
             </p>
           </div>
         </div>
@@ -268,7 +274,7 @@ const About = () => {
               <a
                 className="text-white rounded-md bg-[#4e5173] py-4 px-8 text-md hover:bg-[#907d93]"
                 href="https://discord.gg/jesus"
-                aria-label="Discord"
+                aria-label="Join"
                 target="_blank"
               >
                 Join
